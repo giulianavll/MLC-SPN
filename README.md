@@ -4,6 +4,7 @@ Multi-Label Classification based on Sum-Product Networks
 ## overview
 
 Use the implementations:
+
 [LearnSPN](http://homes.cs.washington.edu/~pedrod/papers/mlc13.pdf) and SPN-AL, SPN-AC as presented in:  
 	_A. Vergari, N. Di Mauro, andF. Esposito_   
 	**Simplifying, Regularizing and Strengthening Sum-Product Network Structure Learning** at ECML-PKDD 2015.
