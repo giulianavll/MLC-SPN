@@ -2,11 +2,7 @@
 import numpy as np
 from math import *
 from numpy.testing import assert_almost_equal
-from spn import SPNID
-from spn import SPNAC
-from spn import SPNAL
-from libra.bin import learn_IDSPN
-import datetime
+from bin.spn import *
 
 
 class Classifier(object):
@@ -16,11 +12,11 @@ class Classifier(object):
 				 train,
 				 name,
 				 nlabels,
-				 natributes):
+				 nattributes):
 		self.learn_algorithm = learn_algorithm
 		self.train = train
 		self.nlabels = nlabels
-		self.natributes	= natributes
+		self.nattributes	= nattributes
 		self.name = name
 		
 	def generate_SPNID(self,
@@ -47,9 +43,11 @@ class Classifier(object):
 		self.order=[i for i in range(np.shape(self.train)[0])]
 
 	def preprocess(self):
+		#implemented in the specific a
 		pass
 
 	def create_classifier(self):
+		#Create classifier, learning SPNs with the algorthm of the params
 		self.options = {
 		'id' : self.generate_classifierID,
 		'al' : self.generate_classifierAL,
@@ -57,12 +55,15 @@ class Classifier(object):
 		}
 		self.generate_order()
 		self.models=[]
+
 		subsets = self.preprocess(order)
 		method_learn = self.options[self.learn_algorithm]
-		i = 1
-		for x in subsets:		
-			models.append(method_learn(x, self.name +'L'+i ))
-			i++
+		for i,s in enumerate(subsets):
+			if i==0 and len(subsets) == 1:
+				name_spn = ''
+			else:
+				name_spn = 'L'+i 		
+			models.append(method_learn(s, self.name +name_spn ))
 
 	def classify(self,
 				 evidence,
@@ -89,7 +90,33 @@ class MClassifierCCG(classifier):
 		 super().__init__(learn_algorithm, train)
 
 	def preprocess(self):
-		#BR preprocess
+		subsets = []
+		
+		dataset = self.train
+		v_order = numpy.zeros(dataset.shape())
+		for l in range (0,self.nlabels): 
+			tlist = []
+			c = self.order[l]
+        	instance_t = numpy.zeros(l+1+self.nattributes)
+        	for i_ds , i_vo in zip(dataset,v_order):
+
+        		
+        		if l != 0 :
+        			instance_t[]
+        		instance_t[0:l]=instance_t[0:]
+        		instance_t[l]=instance_t[c]
+        		instance_t[l+1:]=instance[self.nlabels:]
+
+
+
+
+
+            	instance_t[0:l+1]=instance[0:c+1]
+            	instance_t[l+1:]=instance[n_labels:]
+            	tlist.append(instance_t)
+        	subsets.append(numpy.array(tlist).astype(int))
+        	dataset=subsets[l]
+		return subsets
 
 	def classify(self,
 				 evidence,
@@ -102,7 +129,10 @@ class MClassifierCC1(classifier):
 		 super().__init__(learn_algorithm, train)
 
 	def preprocess(self):
-		#BR preprocess
+		subsets=[]
+		subsets.append(self.train)
+		return subsets
+
 
 	def classify(self,
 				 evidence,
@@ -115,7 +145,10 @@ class MClassifierMPE(classifier):
 		 super().__init__(learn_algorithm, train)
 
 	def preprocess(self):
-		#BR preprocess
+		subsets=[]
+		subsets.append(self.train)
+		return subsets
+
 
 	def classify(self,
 				 evidence,
@@ -128,7 +161,10 @@ class MClassifierLP(classifier):
 		 super().__init__(learn_algorithm, train)
 
 	def preprocess(self):
-		#BR preprocess
+		subsets=[]
+		subsets.append(self.train)
+		return subsets
+
 
 	def classify(self,
 				 evidence,

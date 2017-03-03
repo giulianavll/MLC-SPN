@@ -1,10 +1,6 @@
 import argparse
-import dataset
-from classifier import MClassifierBR
-from classifier import MClassifierCCG
-from classifier import MClassifierCC1
-from classifier import MClassifierLP
-from classifier import MClassifierMPE
+from bin import dataset
+from classifier import *
 
 #########################################
 # creating the opt parser
@@ -35,7 +31,12 @@ approach = args.approach
 n_labels = args.nLabels
 n_attributes = args.nAtrb
 
+
+#load the training set
 train = dataset.csv_2_numpy(dataset + ".train")
+
+
+#choose the approach for MLC
 
 if approach == 'br':
     c= MClassifierBR(spn_mlearn,
@@ -67,5 +68,9 @@ elif approach == 'lp':
                      dataset,
                      n_labels,
                      n_attributes)
+
+#Train a classifier
 c.create_classifier()
-c.get_metrics()
+
+#Classify and get files with the results for Hamming Score, Exact match and  Accuracy 
+#c.get_metrics()
