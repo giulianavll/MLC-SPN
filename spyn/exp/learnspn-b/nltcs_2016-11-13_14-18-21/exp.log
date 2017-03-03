@@ -1,0 +1,4 @@
+parameters:
+Namespace(alpha=[0.1], clt_leaves=False, cluster_method='GMM', cluster_penalty=[1.0], dataset=['nltcs'], g_factor=[1.0], min_inst_slice=[50], n_iters=100, n_restarts=4, n_row_clusters=2, output='./exp/learnspn-b/', seed=1337, sklearn_args=None, verbose=1)
+
+g-factor:	clu-pen:	min-ins:	alpha:	n_edges:	n_levels:	n_weights:	n_leaves:	train_ll	valid_ll:	test_ll
