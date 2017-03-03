@@ -7,6 +7,7 @@ Use the implementations:
 [LearnSPN](http://homes.cs.washington.edu/~pedrod/papers/mlc13.pdf) and SPN-AL, SPN-AC as presented in:  
 	_A. Vergari, N. Di Mauro, andF. Esposito_   
 	**Simplifying, Regularizing and Strengthening Sum-Product Network Structure Learning** at ECML-PKDD 2015.
+	
 [Libra toolkit](http://libra.cs.uoregon.edu/) presented in:
 	_D. Lowd and A. Rooshenas_
 	**The Libra Toolkit for Probabilistic Models** in Journal of Machine Learning Research 2015.
