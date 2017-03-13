@@ -258,14 +258,14 @@ class CategoricalInputLayer(Layer):
         change for * character
         """
         for node in self._nodes:
-			if input[node.var] == "*":
-				node.eval(1)
-				node.eval(0)
-			else:
-				# get the observed value
-				obs = input[node.var]
+            if input[node.var] == "*":
+                node.eval(1)
+                node.eval(0)
+            else:
+                # get the observed value
+                obs = input[node.var]
 				# and eval the node
-				node.eval(obs)
+                node.eval(obs)
 
     def vars(self):
         """
@@ -360,15 +360,15 @@ class CategoricalCLInputLayer(CategoricalInputLayer):
             if isinstance(node, CLTreeNode):
                 node.eval(input)
             else:
-				if input[node.var] == "*":
-					node.eval(1)
-					node.eval(0)
-				else:
-					# the other node type is assumed to be CategoricalS
+                if input[node.var] == "*":
+                    node.eval(1)
+                    node.eval(0)
+                else:
+                    # the other node type is assumed to be CategoricalS
 					# extract the observed var value
-					obs = input[node.var]
+                    obs = input[node.var]
 					# and eval the node
-					node.eval(obs)
+                    node.eval(obs)
 
     def smooth_probs(self, alpha):
         """

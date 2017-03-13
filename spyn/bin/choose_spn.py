@@ -1,23 +1,25 @@
-  import argparse
-  try:
-      from time import perf_counter
-  except:
-      from time import time
-      perf_counter = time
+import argparse
+import sys
+sys.path.append('spyn/')
+try:
+    from time import perf_counter
+except:
+    from time import time
+    perf_counter = time
 
-  from spyn import dataset
-  import collections
-  import numpy
-  from numpy.testing import assert_almost_equal
-  import random
-  import datetime
-  import os
-  import logging
-  from spyn.algo.learnspn import LearnSPN
-  from spyn.spn import NEG_INF
-  from spyn.spn.utils import stats_format
+import dataset
+import collections
+import numpy
+from numpy.testing import assert_almost_equal
+import random
+import datetime
+import os
+import logging
+from algo.learnspn import LearnSPN
+from spn import NEG_INF
+from spn.utils import stats_format
   
-  class ChooserSPN(object):
+class ChooserSPN(object):
       def __init__(self,
                    dataset,
                    path,
@@ -30,18 +32,18 @@
 
           
       def learn_model(self,cltree_leaves):
-          #set parameters for learning
-          verbose =
-          n_row_clusters =
-          cluster_method =
-          seed =
-          g_factors =
-          n_iters =
-          n_restarts =
-          cluster_penalties =
-          sklearn_Args =
-          min_inst_slices =
-          alphas =
+          #set parameters for learning AC (cltree_leaves=True)and AL(cltree_leaves=false) 
+          verbose = 1
+          n_row_clusters = 2
+          cluster_method = 'GMM'
+          seed = 1337
+          g_factors = [1,5,10,15]
+          n_iters = 100
+          n_restarts = 4
+          cluster_penalties = [1.0]
+          sklearn_Args = None
+          min_inst_slices = [5,10,50,100]
+          alphas = [0.01,0.1, 0.5 ,1.0 ,2.0]
 
 
           # setting verbosity level
@@ -50,7 +52,7 @@
           elif verbose == 2:
               logging.basicConfig(level=logging.DEBUG)
 
-          logging.info("Starting with arguments:\n")
+          # logging.info("Starting with arguments:\n")
          
           if sklearn_Args is not None:
               sklearn_key_value_pairs = sklearn_translate(
@@ -60,7 +62,7 @@
                                for pair in sklearn_key_value_pairs]}
           else:
               sklearn_args = {}
-          logging.info(sklearn_args)
+          # logging.info(sklearn_args)
 
           # initing the random generators
           MAX_RAND_SEED = 99999999  # sys.maxsize
@@ -70,14 +72,15 @@
           #
           # elaborating the dataset
           #
-          logging.info('Loading datasets: %s', dataset)
+          
           dataset_name = self.dataset
+          # logging.info('Loading datasets: %s', dataset_name)
           train=self.train
           n_instances = train.shape[0]
           
           #
           # estimating the frequencies for the features
-          logging.info('Estimating features on training set...')
+          # logging.info('')
           freqs, features = dataset.data_2_freqs(train)
           best_train_avg_ll = NEG_INF
           best_state = {}
@@ -118,12 +121,12 @@
                       #
                       # smoothing can be done after the spn has been built
                       for alpha in alphas:
-                          logging.info('Smoothing leaves with alpha = %f', alpha)
+                          # logging.info('Smoothing leaves with alpha = %f', alpha)
                           spn.smooth_leaves(alpha)
                           spns.append(spn)
 
                           # Compute LL on training set
-                          logging.info('Evaluating on training set')
+                          # logging.info('Evaluating on training set')
                           train_ll = 0.0
                           for instance in train:
                               (pred_ll, ) = spn.eval(instance)
@@ -154,8 +157,8 @@
                           # index = index + 1
 
           best_spn = spns[best_state['index']]
-          logging.info('Grid search ended.')
-          logging.info('Best params:\n\t%s', best_state)
+          # logging.info('Grid search ended.')
+          # logging.info('Best params:\n\t%s', best_state)
 
           return best_spn
 
@@ -166,7 +169,7 @@
 
           # Compute LL on test set
           test_lls = numpy.zeros(test.shape[0])
-          logging.info('Evaluating on test set')
+          # logging.info('Evaluating on test set')
          
           for i, instance in enumerate(test):
             (pred_ll,) = spn.eval(instance)

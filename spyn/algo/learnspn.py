@@ -82,7 +82,7 @@ def g_test(feature_id_1,
     # counting for the current instances
     for i in instance_ids:
         co_occ_matrix[data[i, feature_id_1], data[i, feature_id_2]] += 1
-    logging.info('aquii')
+   
     # print('Co occurrences', co_occ_matrix)
     #
     # getting the sum for each feature
@@ -241,10 +241,10 @@ def cluster_rows(data,
             if 'covariance_type' in sklearn_args else 'diag'
         #
         # creating the cluster from sklearn
-        gmm_c = sklearn.mixture.GMM(n_components=n_clusters,
+        gmm_c = sklearn.mixture.GaussianMixture(n_components=n_clusters,
                                     covariance_type=cov_type,
                                     random_state=rand_gen,
-                                    n_iter=n_iters,
+                                    max_iter=n_iters,
                                     n_init=n_restarts)
 
         #
@@ -291,7 +291,7 @@ def cluster_rows(data,
     else:
         raise Exception('Clustering method not valid')
 
-    logging.info('Clustering done in %f secs', (fit_end_t - fit_start_t))
+    # logging.info('Clustering done in %f secs', (fit_end_t - fit_start_t))
 
     #
     # translating the cluster assignment to
@@ -364,23 +364,23 @@ class LearnSPN(object):
         self._rand_gen = rand_gen if rand_gen is not None \
             else numpy.random.RandomState(RND_SEED)
 
-        logging.info('LearnSPN:\n\tg factor:%f\n\tmin inst:%d\n' +
-                     '\tmin feat:%d\n' +
-                     '\talpha:%f\n\tcluster pen:%f\n\tn clusters:%d\n' +
-                     '\tcluster method=%s\n\tn iters: %d\n' +
-                     '\tn restarts: %d\n\tcltree leaves:%s\n' +
-                     '\tsklearn args: %s\n',
-                     self._g_factor,
-                     self._min_instances_slice,
-                     self._min_features_slice,
-                     self._alpha,
-                     self._cluster_penalty,
-                     self._n_cluster_splits,
-                     self._row_cluster_method,
-                     self._n_iters,
-                     self._n_restarts,
-                     self._cltree_leaves,
-                     self._sklearn_args)
+        # logging.info('LearnSPN:\n\tg factor:%f\n\tmin inst:%d\n' +
+        #              '\tmin feat:%d\n' +
+        #              '\talpha:%f\n\tcluster pen:%f\n\tn clusters:%d\n' +
+        #              '\tcluster method=%s\n\tn iters: %d\n' +
+        #              '\tn restarts: %d\n\tcltree leaves:%s\n' +
+        #              '\tsklearn args: %s\n',
+        #              self._g_factor,
+        #              self._min_instances_slice,
+        #              self._min_features_slice,
+        #              self._alpha,
+        #              self._cluster_penalty,
+        #              self._n_cluster_splits,
+        #              self._row_cluster_method,
+        #              self._n_iters,
+        #              self._n_restarts,
+        #              self._cltree_leaves,
+        #              self._sklearn_args)
 
         #
         # resetting the data slice ids (just in case)
@@ -518,8 +518,8 @@ class LearnSPN(object):
         tot_n_instances = data.shape[0]
         tot_n_features = data.shape[1]
 
-        logging.info('Learning SPN structure on a (%d X %d) dataset',
-                     tot_n_instances, tot_n_features)
+        # logging.info('Learning SPN structure on a (%d X %d) dataset',
+        #              tot_n_instances, tot_n_features)
         learn_start_t = perf_counter()
 
         #
@@ -555,17 +555,17 @@ class LearnSPN(object):
             n_instances = len(current_instances)
             n_features = len(current_features)
 
-            logging.info('\n*** Processing slice %d (%d X %d)',
-                         current_id,
-                         n_instances, n_features)
-            logging.debug('\tinstances:%s\n\tfeatures:%s',
-                          current_instances,
-                          current_features)
+            # logging.info('\n*** Processing slice %d (%d X %d)',
+                         # current_id,
+                         # n_instances, n_features)
+            # logging.debug('\tinstances:%s\n\tfeatures:%s',
+            #               current_instances,
+            #               current_features)
 
             #
             # is this a leaf node or we can split?
             if n_features == 1:
-                logging.info('---> Adding a leaf (just one feature)')
+                # logging.info('---> Adding a leaf (just one feature)')
 
                 (feature_id, ) = current_features
                 feature_size = feature_sizes[feature_id]
@@ -657,7 +657,7 @@ class LearnSPN(object):
                 #
                 # first run is a split on rows
                 if first_run:
-                    logging.info('-- FIRST RUN --')
+                    # logging.info('-- FIRST RUN --')
                     first_run = False
                 else:
                     #
@@ -676,7 +676,7 @@ class LearnSPN(object):
                 if split_on_features:
                     #
                     # splitting on columns
-                    logging.info('---> Splitting on features')
+                    # logging.info('---> Splitting on features')
 
                     #
                     # creating two new data slices and putting them on queue
@@ -709,7 +709,7 @@ class LearnSPN(object):
                 else:
                     #
                     # clustering on rows
-                    logging.info('---> Splitting on rows')
+                    # logging.info('---> Splitting on rows')
 
                     #
                     # at most n_rows clusters, for sklearn
@@ -728,8 +728,8 @@ class LearnSPN(object):
                                      sklearn_args=self._sklearn_args)
 
                     # logging.debug('obtained clustering %s', clustering)
-                    logging.info('clustered into %d parts (min %d)',
-                                 len(clustering), k_row_clusters)
+                    # logging.info('clustered into %d parts (min %d)',
+                                 # len(clustering), k_row_clusters)
                     # splitting
                     cluster_slices = [DataSlice(cluster, current_features)
                                       for cluster in clustering]
@@ -762,37 +762,37 @@ class LearnSPN(object):
                                   cluster_slices_ids)
 
         learn_end_t = perf_counter()
-        logging.info('Structure learned in %f secs',
-                     (learn_end_t - learn_start_t))
+        # logging.info('Structure learned in %f secs',
+                     # (learn_end_t - learn_start_t))
 
         #
         # linking the spn graph (parent -> children)
         #
-        logging.info('===> Building tree')
+        # logging.info('===> Building tree')
 
         link_start_t = perf_counter()
         root_build_node = building_stack[0]
         root_node = node_id_assoc[root_build_node.id]
-        logging.debug('root node: %s', root_node)
+        # logging.debug('root node: %s', root_node)
 
         root_node = SpnFactory.pruned_spn_from_slices(node_id_assoc,
                                                       building_stack)
         link_end_t = perf_counter()
-        logging.info('\tLinked the spn in %f secs (root_node %s)',
-                     (link_end_t - link_start_t),
-                     root_node)
+        # logging.info('\tLinked the spn in %f secs (root_node %s)',
+        #              (link_end_t - link_start_t),
+        #              root_node)
 
         #
         # building layers
         #
-        logging.info('===> Layering spn')
+        # logging.info('===> Layering spn')
         layer_start_t = perf_counter()
         spn = SpnFactory.layered_linked_spn(root_node)
         layer_end_t = perf_counter()
-        logging.info('\tLayered the spn in %f secs',
-                     (layer_end_t - layer_start_t))
+        # logging.info('\tLayered the spn in %f secs',
+        #              (layer_end_t - layer_start_t))
 
-        logging.info('\nLearned SPN\n\n%s', spn.stats())
+        # logging.info('\nLearned SPN\n\n%s', spn.stats())
 
         return spn
 
@@ -817,8 +817,8 @@ class LearnSPN(object):
 
         inst_compo_ratio = tot_n_instances / n_components
 
-        logging.info('Learning SPN structure on a (%d X %d) dataset',
-                     tot_n_instances, tot_n_features)
+        # logging.info('Learning SPN structure on a (%d X %d) dataset',
+        #              tot_n_instances, tot_n_features)
         learn_start_t = perf_counter()
 
         #
@@ -967,7 +967,7 @@ class LearnSPN(object):
                 #
                 # first run is a split on rows
                 if first_run:
-                    logging.info('-- FIRST RUN --')
+                    logging.info('')
                     # first_run = False
                 else:
                     #
@@ -986,7 +986,7 @@ class LearnSPN(object):
                 if split_on_features:
                     #
                     # splitting on columns
-                    logging.info('---> Splitting on features')
+                    # logging.info('---> Splitting on features')
 
                     #
                     # creating two new data slices and putting them on queue
@@ -1022,7 +1022,7 @@ class LearnSPN(object):
                 else:
                     #
                     # clustering on rows
-                    logging.info('---> Splitting on rows')
+                    # logging.info('---> Splitting on rows')
 
                     #
                     # at most n_rows clusters, for sklearn
@@ -1151,25 +1151,25 @@ class LearnSPN(object):
                                   sampled_ids)
 
         learn_end_t = perf_counter()
-        logging.info('Structure learned in %f secs',
-                     (learn_end_t - learn_start_t))
+        # logging.info('Structure learned in %f secs',
+        #              (learn_end_t - learn_start_t))
 
         #
         # linking the spn graph (parent -> children)
         #
-        logging.info('===> Building tree')
+        # logging.info('===> Building tree')
 
         link_start_t = perf_counter()
         root_build_node = building_stack[0]
         root_node = node_id_assoc[root_build_node.id]
-        logging.debug('root node: %s', root_node)
+        # logging.debug('root node: %s', root_node)
 
         root_node = SpnFactory.pruned_spn_from_slices(node_id_assoc,
                                                       building_stack)
         link_end_t = perf_counter()
-        logging.info('\tLinked the spn in %f secs (root_node %s)',
-                     (link_end_t - link_start_t),
-                     root_node)
+        # logging.info('\tLinked the spn in %f secs (root_node %s)',
+        #              (link_end_t - link_start_t),
+        #              root_node)
 
         #
         # building layers
@@ -1376,7 +1376,7 @@ class RandomLearnSPN(object):
                 #
                 # first run is a split on rows
                 if first_run:
-                    logging.info('-- FIRST RUN --')
+                    # logging.info('-- FIRST RUN --')
                     first_run = False
                 else:
                     #
@@ -1398,7 +1398,7 @@ class RandomLearnSPN(object):
                 if split_on_features:
                     #
                     # splitting on columns
-                    logging.info('---> Splitting on features')
+                    # logging.info('---> Splitting on features')
 
                     # shuffling features
                     self._rand_gen.shuffle(current_features)
@@ -1439,7 +1439,7 @@ class RandomLearnSPN(object):
                 else:
                     #
                     # clustering on rows
-                    logging.info('---> Splitting on rows')
+                    # logging.info('---> Splitting on rows')
 
                     #
                     # at most n_rows clusters, for sklearn
@@ -1496,37 +1496,37 @@ class RandomLearnSPN(object):
                                   cluster_slices_ids)
 
         learn_end_t = perf_counter()
-        logging.info('Structure learned in %f secs',
-                     (learn_end_t - learn_start_t))
+        # logging.info('Structure learned in %f secs',
+        #              (learn_end_t - learn_start_t))
 
         #
         # linking the spn graph (parent -> children)
         #
-        logging.info('===> Building tree')
+        # logging.info('===> Building tree')
 
         link_start_t = perf_counter()
         root_build_node = building_stack[0]
         root_node = node_id_assoc[root_build_node.id]
-        logging.debug('root node: %s', root_node)
+        # logging.debug('root node: %s', root_node)
 
         root_node = SpnFactory.pruned_spn_from_slices(node_id_assoc,
                                                       building_stack)
         link_end_t = perf_counter()
-        logging.info('\tLinked the spn in %f secs (root_node %s)',
-                     (link_end_t - link_start_t),
-                     root_node)
+        # logging.info('\tLinked the spn in %f secs (root_node %s)',
+        #              (link_end_t - link_start_t),
+        #              root_node)
 
         #
         # building layers
         #
-        logging.info('===> Layering spn')
+        # logging.info('===> Layering spn')
         layer_start_t = perf_counter()
         spn = SpnFactory.layered_linked_spn(root_node)
         layer_end_t = perf_counter()
-        logging.info('\tLayered the spn in %f secs',
-                     (layer_end_t - layer_start_t))
+        # logging.info('\tLayered the spn in %f secs',
+        #              (layer_end_t - layer_start_t))
 
-        logging.info('\nLearned SPN\n\n%s', spn.stats())
+        # logging.info('\nLearned SPN\n\n%s', spn.stats())
 
         # print(spn)
 
