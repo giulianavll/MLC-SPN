@@ -188,6 +188,25 @@ class Spn(AbstractSpn):
         # result is returned as a list of log-values
         return self._root_layer.node_values()
 
+    def single_mpe(self, input):
+        """
+        WRITEME
+        """
+        # evaluating the input layer first
+        # smoothed input layers are evaluated soft as well
+        # (is this correct?)
+        self._input_layer.eval(input)
+
+        # then propagate upwards by evaluating other layers
+        # with MPE inference
+        for layer in self._layers:
+            layer.mpe_eval()
+
+        # result is returned as a list of mpe-values
+        return self._root_layer.node_contend()
+
+
+
     def test_mpe_eval(self):
         """
         this is done for testing purposes only,

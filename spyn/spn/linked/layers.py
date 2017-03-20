@@ -92,6 +92,14 @@ class Layer(object):
         # depending on the freq of the op I could allocate
         # just once the list
         return [node.log_val for node in self._nodes]
+        
+    def node_contend(self):
+        """
+        WRITEME
+        """
+        # depending on the freq of the op I could allocate
+        # just once the list
+        return [node.val_mpe for node in self._nodes]
 
     def get_nodes_by_id(self, node_pos):
         """
@@ -255,17 +263,13 @@ class CategoricalInputLayer(Layer):
     def eval(self, input):
         """
         WRITEME
-        change for * character
         """
+        
         for node in self._nodes:
-            if input[node.var] == "*":
-                node.eval(1)
-                node.eval(0)
-            else:
-                # get the observed value
-                obs = input[node.var]
-				# and eval the node
-                node.eval(obs)
+            # get the observed value
+            obs = input[node.var]
+            # and eval the node
+            node.eval(obs)
 
     def vars(self):
         """
@@ -360,15 +364,11 @@ class CategoricalCLInputLayer(CategoricalInputLayer):
             if isinstance(node, CLTreeNode):
                 node.eval(input)
             else:
-                if input[node.var] == "*":
-                    node.eval(1)
-                    node.eval(0)
-                else:
-                    # the other node type is assumed to be CategoricalS
-					# extract the observed var value
-                    obs = input[node.var]
-					# and eval the node
-                    node.eval(obs)
+                # the other node type is assumed to be CategoricalS
+                # extract the observed var value
+                obs = input[node.var]
+                # and eval the node
+                node.eval(obs)
 
     def smooth_probs(self, alpha):
         """

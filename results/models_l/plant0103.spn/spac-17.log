@@ -1,0 +1,3012 @@
+Initial log likelihood: -19744.712630
+Initializing took 1.188000 seconds.
+
+SPLIT 1:
+Recomputed: 1 splits, 1 features; worst-case edges: 9
+Delta edges: 9 ; ll: 18.715427
+Total edges: 2053 ; Depth: 7
+Errcode = Stop; KLD = 21279.765549
+Actual delta ll: -1535.052919
+Elapsed time: 1.216000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.0040 split=0.0000 update=0.0240
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1600 exp_p=0.2480 score2d=0.4320
+
+SPLIT 2:
+Recomputed: 1 splits, 1 features; worst-case edges: 9
+Delta edges: 9 ; ll: 16.394987
+Total edges: 2062 ; Depth: 7
+Errcode = Stop; KLD = 21258.569755
+Actual delta ll: 21.195794
+Elapsed time: 1.244000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.0080 split=0.0040 update=0.0440
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1600 exp_p=0.2520 score2d=0.4320
+
+SPLIT 3:
+Recomputed: 1 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 14.754702
+Total edges: 2071 ; Depth: 7
+Errcode = Stop; KLD = 21236.901235
+Actual delta ll: 21.668519
+Elapsed time: 1.268000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.0120 split=0.0080 update=0.0600
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1640 exp_p=0.2520 score2d=0.4320
+
+SPLIT 4:
+Recomputed: 1 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 13.736864
+Total edges: 2080 ; Depth: 7
+Errcode = Stop; KLD = 21221.047713
+Actual delta ll: 15.853522
+Elapsed time: 1.284000 seconds
+Delta time: 0.016000 seconds
+Times: pick=0.0120 split=0.0120 update=0.0720
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1640 exp_p=0.2520 score2d=0.4360
+
+SPLIT 5:
+Recomputed: 2 splits, 6 features; worst-case edges: 9
+Delta edges: 9 ; ll: 8.508500
+Total edges: 2089 ; Depth: 7
+Errcode = Stop; KLD = 21210.387180
+Actual delta ll: 10.660533
+Elapsed time: 1.312000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.0160 split=0.0120 update=0.0960
+Times: edges=0.0000 ll=0.0040 efx=0.0040 1dsearch=0.0000
+Times: emp_p=0.1640 exp_p=0.2520 score2d=0.4360
+
+SPLIT 6:
+Recomputed: 3 splits, 4 features; worst-case edges: 25
+Delta edges: 16 ; ll: 9.248255
+Total edges: 2105 ; Depth: 10
+Errcode = Stop; KLD = 21199.945650
+Actual delta ll: 10.441530
+Elapsed time: 1.348000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.0360 split=0.0160 update=0.1080
+Times: edges=0.0000 ll=0.0160 efx=0.0160 1dsearch=0.0000
+Times: emp_p=0.1640 exp_p=0.2520 score2d=0.4400
+
+SPLIT 7:
+Recomputed: 10 splits, 13 features; worst-case edges: 44
+Delta edges: 13 ; ll: 7.830366
+Total edges: 2118 ; Depth: 10
+Errcode = Stop; KLD = 21188.627946
+Actual delta ll: 11.317704
+Elapsed time: 1.372000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.0440 split=0.0200 update=0.1200
+Times: edges=0.0000 ll=0.0240 efx=0.0240 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2520 score2d=0.4400
+
+SPLIT 8:
+Recomputed: 3 splits, 6 features; worst-case edges: 17
+Delta edges: 16 ; ll: 7.782938
+Total edges: 2134 ; Depth: 11
+Errcode = Stop; KLD = 21178.991369
+Actual delta ll: 9.636577
+Elapsed time: 1.412000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.0480 split=0.0280 update=0.1480
+Times: edges=0.0000 ll=0.0280 efx=0.0280 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2560 score2d=0.4400
+
+SPLIT 9:
+Recomputed: 1 splits, 1 features; worst-case edges: 9
+Delta edges: 9 ; ll: 7.097567
+Total edges: 2143 ; Depth: 11
+Errcode = Stop; KLD = 21168.780613
+Actual delta ll: 10.210756
+Elapsed time: 1.432000 seconds
+Delta time: 0.020000 seconds
+Times: pick=0.0480 split=0.0320 update=0.1640
+Times: edges=0.0000 ll=0.0280 efx=0.0280 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2600 score2d=0.4400
+
+SPLIT 10:
+Recomputed: 8 splits, 14 features; worst-case edges: 25
+Delta edges: 9 ; ll: 6.713912
+Total edges: 2152 ; Depth: 11
+Errcode = Stop; KLD = 21161.288324
+Actual delta ll: 7.492289
+Elapsed time: 1.464000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.0600 split=0.0360 update=0.1800
+Times: edges=0.0000 ll=0.0400 efx=0.0360 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2640 score2d=0.4400
+
+SPLIT 11:
+Recomputed: 6 splits, 6 features; worst-case edges: 38
+Delta edges: 13 ; ll: 7.068030
+Total edges: 2165 ; Depth: 11
+Errcode = Stop; KLD = 21150.906609
+Actual delta ll: 10.381715
+Elapsed time: 1.532000 seconds
+Delta time: 0.068000 seconds
+Times: pick=0.0760 split=0.0480 update=0.2200
+Times: edges=0.0000 ll=0.0560 efx=0.0520 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2640 score2d=0.4400
+
+SPLIT 12:
+Recomputed: 5 splits, 5 features; worst-case edges: 17
+Delta edges: 9 ; ll: 6.593748
+Total edges: 2174 ; Depth: 11
+Errcode = Stop; KLD = 21141.271416
+Actual delta ll: 9.635193
+Elapsed time: 1.560000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.0840 split=0.0520 update=0.2360
+Times: edges=0.0000 ll=0.0600 efx=0.0560 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2640 score2d=0.4440
+
+SPLIT 13:
+Recomputed: 2 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 6.530749
+Total edges: 2183 ; Depth: 11
+Errcode = Stop; KLD = 21133.846832
+Actual delta ll: 7.424584
+Elapsed time: 1.580000 seconds
+Delta time: 0.020000 seconds
+Times: pick=0.0880 split=0.0560 update=0.2480
+Times: edges=0.0000 ll=0.0600 efx=0.0560 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2640 score2d=0.4440
+
+SPLIT 14:
+Recomputed: 6 splits, 6 features; worst-case edges: 17
+Delta edges: 9 ; ll: 6.479334
+Total edges: 2192 ; Depth: 11
+Errcode = Stop; KLD = 21124.890740
+Actual delta ll: 8.956092
+Elapsed time: 1.632000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.1040 split=0.0640 update=0.2760
+Times: edges=0.0000 ll=0.0760 efx=0.0720 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2680 score2d=0.4440
+
+SPLIT 15:
+Recomputed: 3 splits, 7 features; worst-case edges: 22
+Delta edges: 11 ; ll: 6.403355
+Total edges: 2203 ; Depth: 11
+Errcode = Stop; KLD = 21117.257796
+Actual delta ll: 7.632943
+Elapsed time: 1.648000 seconds
+Delta time: 0.016000 seconds
+Times: pick=0.1080 split=0.0680 update=0.2840
+Times: edges=0.0000 ll=0.0800 efx=0.0760 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2680 score2d=0.4440
+
+SPLIT 16:
+Recomputed: 3 splits, 3 features; worst-case edges: 11
+Delta edges: 11 ; ll: 6.320926
+Total edges: 2214 ; Depth: 12
+Errcode = Stop; KLD = 21108.972215
+Actual delta ll: 8.285581
+Elapsed time: 1.664000 seconds
+Delta time: 0.016000 seconds
+Times: pick=0.1120 split=0.0680 update=0.2960
+Times: edges=0.0000 ll=0.0840 efx=0.0800 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2680 score2d=0.4440
+
+SPLIT 17:
+Recomputed: 1 splits, 1 features; worst-case edges: 17
+Delta edges: 17 ; ll: 6.917900
+Total edges: 2231 ; Depth: 12
+Errcode = Stop; KLD = 21101.226177
+Actual delta ll: 7.746038
+Elapsed time: 1.700000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.1160 split=0.0760 update=0.3200
+Times: edges=0.0000 ll=0.0840 efx=0.0800 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2680 score2d=0.4440
+
+SPLIT 18:
+Recomputed: 2 splits, 2 features; worst-case edges: 11
+Delta edges: 11 ; ll: 6.294416
+Total edges: 2242 ; Depth: 12
+Errcode = Stop; KLD = 21093.924519
+Actual delta ll: 7.301658
+Elapsed time: 1.724000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.1280 split=0.0800 update=0.3280
+Times: edges=0.0000 ll=0.0840 efx=0.0800 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.2680 score2d=0.4440
+
+SPLIT 19:
+Recomputed: 2 splits, 7 features; worst-case edges: 11
+Delta edges: 10 ; ll: 6.084464
+Total edges: 2252 ; Depth: 12
+Errcode = Stop; KLD = 21084.989098
+Actual delta ll: 8.935421
+Elapsed time: 1.852000 seconds
+Delta time: 0.128000 seconds
+Times: pick=0.1360 split=0.0800 update=0.4480
+Times: edges=0.0000 ll=0.0880 efx=0.0840 1dsearch=0.0000
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4440
+
+SPLIT 20:
+Recomputed: 4 splits, 6 features; worst-case edges: 40
+Delta edges: 11 ; ll: 6.220329
+Total edges: 2263 ; Depth: 12
+Errcode = Stop; KLD = 21075.896466
+Actual delta ll: 9.092633
+Elapsed time: 1.884000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.1440 split=0.0840 update=0.4680
+Times: edges=0.0000 ll=0.0920 efx=0.0880 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4440
+
+SPLIT 21:
+Recomputed: 8 splits, 11 features; worst-case edges: 19
+Delta edges: 13 ; ll: 6.184967
+Total edges: 2276 ; Depth: 12
+Errcode = Stop; KLD = 21068.053470
+Actual delta ll: 7.842995
+Elapsed time: 1.912000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.1520 split=0.0880 update=0.4840
+Times: edges=0.0000 ll=0.1000 efx=0.0920 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4480
+
+SPLIT 22:
+Recomputed: 5 splits, 7 features; worst-case edges: 18
+Delta edges: 11 ; ll: 5.943210
+Total edges: 2287 ; Depth: 12
+Errcode = Stop; KLD = 21058.931964
+Actual delta ll: 9.121506
+Elapsed time: 1.944000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.1640 split=0.0920 update=0.5000
+Times: edges=0.0000 ll=0.1080 efx=0.0960 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4520
+
+SPLIT 23:
+Recomputed: 1 splits, 1 features; worst-case edges: 11
+Delta edges: 11 ; ll: 6.010790
+Total edges: 2298 ; Depth: 12
+Errcode = Stop; KLD = 21049.835221
+Actual delta ll: 9.096743
+Elapsed time: 1.968000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.1640 split=0.0960 update=0.5200
+Times: edges=0.0000 ll=0.1080 efx=0.0960 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4560
+
+SPLIT 24:
+Recomputed: 2 splits, 2 features; worst-case edges: 11
+Delta edges: 11 ; ll: 5.888793
+Total edges: 2309 ; Depth: 12
+Errcode = Stop; KLD = 21042.787835
+Actual delta ll: 7.047386
+Elapsed time: 1.992000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.1720 split=0.1000 update=0.5320
+Times: edges=0.0000 ll=0.1120 efx=0.1000 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4560
+
+SPLIT 25:
+Recomputed: 1 splits, 4 features; worst-case edges: 9
+Delta edges: 9 ; ll: 5.636504
+Total edges: 2318 ; Depth: 12
+Errcode = Stop; KLD = 21033.040289
+Actual delta ll: 9.747546
+Elapsed time: 2.004000 seconds
+Delta time: 0.012000 seconds
+Times: pick=0.1720 split=0.1040 update=0.5400
+Times: edges=0.0000 ll=0.1120 efx=0.1000 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4560
+
+SPLIT 26:
+Recomputed: 5 splits, 7 features; worst-case edges: 40
+Delta edges: 40 ; ll: 8.695708
+Total edges: 2358 ; Depth: 15
+Errcode = Stop; KLD = 21023.123610
+Actual delta ll: 9.916679
+Elapsed time: 2.040000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.1800 split=0.1200 update=0.5520
+Times: edges=0.0000 ll=0.1160 efx=0.1040 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4600
+
+SPLIT 27:
+Recomputed: 7 splits, 16 features; worst-case edges: 27
+Delta edges: 11 ; ll: 5.564159
+Total edges: 2369 ; Depth: 15
+Errcode = Stop; KLD = 21016.281226
+Actual delta ll: 6.842384
+Elapsed time: 2.072000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.1920 split=0.1240 update=0.5680
+Times: edges=0.0000 ll=0.1280 efx=0.1160 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4640
+
+SPLIT 28:
+Recomputed: 5 splits, 6 features; worst-case edges: 16
+Delta edges: 9 ; ll: 5.289224
+Total edges: 2378 ; Depth: 15
+Errcode = Stop; KLD = 21008.928324
+Actual delta ll: 7.352902
+Elapsed time: 2.104000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.2000 split=0.1280 update=0.5880
+Times: edges=0.0000 ll=0.1360 efx=0.1240 1dsearch=0.0040
+Times: emp_p=0.1680 exp_p=0.3640 score2d=0.4680
+
+SPLIT 29:
+Recomputed: 3 splits, 6 features; worst-case edges: 14
+Delta edges: 9 ; ll: 5.233910
+Total edges: 2387 ; Depth: 15
+Errcode = Stop; KLD = 21001.926704
+Actual delta ll: 7.001620
+Elapsed time: 2.132000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.2040 split=0.1320 update=0.6080
+Times: edges=0.0000 ll=0.1400 efx=0.1280 1dsearch=0.0040
+Times: emp_p=0.1720 exp_p=0.3640 score2d=0.4680
+
+SPLIT 30:
+Recomputed: 4 splits, 6 features; worst-case edges: 13
+Delta edges: 11 ; ll: 5.385190
+Total edges: 2398 ; Depth: 15
+Errcode = Stop; KLD = 20993.852178
+Actual delta ll: 8.074526
+Elapsed time: 2.168000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.2120 split=0.1440 update=0.6240
+Times: edges=0.0000 ll=0.1480 efx=0.1360 1dsearch=0.0040
+Times: emp_p=0.1720 exp_p=0.3640 score2d=0.4720
+
+SPLIT 31:
+Recomputed: 6 splits, 15 features; worst-case edges: 15
+Delta edges: 9 ; ll: 5.045139
+Total edges: 2407 ; Depth: 15
+Errcode = Stop; KLD = 20987.282480
+Actual delta ll: 6.569697
+Elapsed time: 2.208000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.2200 split=0.1560 update=0.6440
+Times: edges=0.0000 ll=0.1520 efx=0.1400 1dsearch=0.0040
+Times: emp_p=0.1720 exp_p=0.3640 score2d=0.4720
+
+SPLIT 32:
+Recomputed: 10 splits, 21 features; worst-case edges: 13
+Delta edges: 11 ; ll: 5.087989
+Total edges: 2418 ; Depth: 15
+Errcode = Stop; KLD = 20981.414104
+Actual delta ll: 5.868376
+Elapsed time: 2.260000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.2400 split=0.1640 update=0.6680
+Times: edges=0.0000 ll=0.1680 efx=0.1560 1dsearch=0.0040
+Times: emp_p=0.1720 exp_p=0.3680 score2d=0.4720
+
+SPLIT 33:
+Recomputed: 8 splits, 10 features; worst-case edges: 16
+Delta edges: 16 ; ll: 5.458905
+Total edges: 2434 ; Depth: 15
+Errcode = Stop; KLD = 20973.720048
+Actual delta ll: 7.694056
+Elapsed time: 2.296000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.2520 split=0.1720 update=0.6840
+Times: edges=0.0000 ll=0.1760 efx=0.1640 1dsearch=0.0040
+Times: emp_p=0.1720 exp_p=0.3680 score2d=0.4720
+
+SPLIT 34:
+Recomputed: 12 splits, 21 features; worst-case edges: 18
+Delta edges: 11 ; ll: 4.702144
+Total edges: 2445 ; Depth: 15
+Errcode = Stop; KLD = 20967.961107
+Actual delta ll: 5.758940
+Elapsed time: 2.348000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.2840 split=0.1760 update=0.7000
+Times: edges=0.0040 ll=0.1960 efx=0.1840 1dsearch=0.0040
+Times: emp_p=0.1720 exp_p=0.3680 score2d=0.4720
+
+SPLIT 35:
+Recomputed: 2 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 4.485138
+Total edges: 2454 ; Depth: 15
+Errcode = Stop; KLD = 20961.794177
+Actual delta ll: 6.166930
+Elapsed time: 2.384000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.2920 split=0.1880 update=0.7160
+Times: edges=0.0040 ll=0.2000 efx=0.1880 1dsearch=0.0040
+Times: emp_p=0.1720 exp_p=0.3720 score2d=0.4720
+
+SPLIT 36:
+Recomputed: 6 splits, 8 features; worst-case edges: 11
+Learning converged with edge penalty of 0.100000.
+Continuing with new edge cost of 0.050000.
+Recomputed: 37 splits, 25 features; worst-case edges: 33
+Delta edges: 11 ; ll: 4.605567
+Total edges: 2465 ; Depth: 15
+Errcode = Stop; KLD = 20956.150751
+Actual delta ll: 5.643426
+Elapsed time: 2.456000 seconds
+Delta time: 0.072000 seconds
+Times: pick=0.3440 split=0.1920 update=0.7320
+Times: edges=0.0080 ll=0.2360 efx=0.2200 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3720 score2d=0.4720
+
+SPLIT 37:
+Recomputed: 3 splits, 3 features; worst-case edges: 16
+Delta edges: 16 ; ll: 4.812966
+Total edges: 2481 ; Depth: 15
+Errcode = Stop; KLD = 20948.431436
+Actual delta ll: 7.719315
+Elapsed time: 2.504000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.3520 split=0.2000 update=0.7640
+Times: edges=0.0080 ll=0.2400 efx=0.2240 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3720 score2d=0.4720
+
+SPLIT 38:
+Recomputed: 4 splits, 4 features; worst-case edges: 14
+Delta edges: 9 ; ll: 4.411295
+Total edges: 2490 ; Depth: 15
+Errcode = Stop; KLD = 20941.093219
+Actual delta ll: 7.338217
+Elapsed time: 2.560000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.3640 split=0.2200 update=0.7880
+Times: edges=0.0080 ll=0.2480 efx=0.2320 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3720 score2d=0.4720
+
+SPLIT 39:
+Recomputed: 3 splits, 3 features; worst-case edges: 21
+Delta edges: 17 ; ll: 4.796316
+Total edges: 2507 ; Depth: 15
+Errcode = Stop; KLD = 20933.533514
+Actual delta ll: 7.559705
+Elapsed time: 2.624000 seconds
+Delta time: 0.064000 seconds
+Times: pick=0.3640 split=0.2280 update=0.8440
+Times: edges=0.0080 ll=0.2480 efx=0.2320 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3720 score2d=0.4800
+
+SPLIT 40:
+Recomputed: 2 splits, 2 features; worst-case edges: 19
+Delta edges: 11 ; ll: 4.491030
+Total edges: 2518 ; Depth: 16
+Errcode = Stop; KLD = 20926.687746
+Actual delta ll: 6.845768
+Elapsed time: 2.668000 seconds
+Delta time: 0.044000 seconds
+Times: pick=0.3760 split=0.2320 update=0.8720
+Times: edges=0.0080 ll=0.2480 efx=0.2320 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3720 score2d=0.4840
+
+SPLIT 41:
+Recomputed: 2 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 4.340996
+Total edges: 2527 ; Depth: 16
+Errcode = Stop; KLD = 20920.090178
+Actual delta ll: 6.597568
+Elapsed time: 2.724000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.3800 split=0.2440 update=0.9120
+Times: edges=0.0080 ll=0.2480 efx=0.2320 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3720 score2d=0.4880
+
+SPLIT 42:
+Recomputed: 1 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 4.297372
+Total edges: 2536 ; Depth: 16
+Errcode = Stop; KLD = 20914.002562
+Actual delta ll: 6.087616
+Elapsed time: 2.772000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.3880 split=0.2600 update=0.9360
+Times: edges=0.0080 ll=0.2520 efx=0.2360 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3760 score2d=0.4880
+
+SPLIT 43:
+Recomputed: 8 splits, 9 features; worst-case edges: 25
+Delta edges: 9 ; ll: 4.150383
+Total edges: 2545 ; Depth: 16
+Errcode = Stop; KLD = 20908.871736
+Actual delta ll: 5.130826
+Elapsed time: 2.836000 seconds
+Delta time: 0.064000 seconds
+Times: pick=0.4000 split=0.2680 update=0.9800
+Times: edges=0.0080 ll=0.2600 efx=0.2400 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3760 score2d=0.4960
+
+SPLIT 44:
+Recomputed: 1 splits, 1 features; worst-case edges: 10
+Delta edges: 10 ; ll: 4.193814
+Total edges: 2555 ; Depth: 16
+Errcode = Stop; KLD = 20902.235660
+Actual delta ll: 6.636076
+Elapsed time: 2.876000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.4040 split=0.2800 update=1.0040
+Times: edges=0.0080 ll=0.2600 efx=0.2400 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3760 score2d=0.5000
+
+SPLIT 45:
+Recomputed: 6 splits, 15 features; worst-case edges: 19
+Delta edges: 19 ; ll: 4.592199
+Total edges: 2574 ; Depth: 16
+Errcode = Stop; KLD = 20897.277437
+Actual delta ll: 4.958223
+Elapsed time: 2.936000 seconds
+Delta time: 0.060000 seconds
+Times: pick=0.4240 split=0.2880 update=1.0360
+Times: edges=0.0080 ll=0.2760 efx=0.2560 1dsearch=0.0040
+Times: emp_p=0.1760 exp_p=0.3800 score2d=0.5000
+
+SPLIT 46:
+Recomputed: 8 splits, 14 features; worst-case edges: 33
+Learning converged with edge penalty of 0.050000.
+Continuing with new edge cost of 0.025000.
+Recomputed: 24 splits, 15 features; worst-case edges: 59
+Delta edges: 22 ; ll: 4.641142
+Total edges: 2596 ; Depth: 16
+Errcode = Stop; KLD = 20890.230900
+Actual delta ll: 7.046537
+Elapsed time: 3.064000 seconds
+Delta time: 0.128000 seconds
+Times: pick=0.4920 split=0.3000 update=1.0840
+Times: edges=0.0080 ll=0.3120 efx=0.2840 1dsearch=0.0040
+Times: emp_p=0.1800 exp_p=0.3800 score2d=0.5000
+
+SPLIT 47:
+Recomputed: 6 splits, 6 features; worst-case edges: 25
+Delta edges: 25 ; ll: 4.599720
+Total edges: 2621 ; Depth: 16
+Errcode = Stop; KLD = 20883.698074
+Actual delta ll: 6.532826
+Elapsed time: 3.120000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.5080 split=0.3080 update=1.1160
+Times: edges=0.0120 ll=0.3200 efx=0.2920 1dsearch=0.0040
+Times: emp_p=0.1800 exp_p=0.3800 score2d=0.5040
+
+SPLIT 48:
+Recomputed: 6 splits, 7 features; worst-case edges: 27
+Delta edges: 27 ; ll: 4.534810
+Total edges: 2648 ; Depth: 16
+Errcode = Stop; KLD = 20877.763972
+Actual delta ll: 5.934102
+Elapsed time: 3.192000 seconds
+Delta time: 0.072000 seconds
+Times: pick=0.5200 split=0.3280 update=1.1560
+Times: edges=0.0160 ll=0.3280 efx=0.3000 1dsearch=0.0040
+Times: emp_p=0.1840 exp_p=0.3800 score2d=0.5080
+
+SPLIT 49:
+Recomputed: 8 splits, 9 features; worst-case edges: 59
+Delta edges: 9 ; ll: 3.909967
+Total edges: 2657 ; Depth: 16
+Errcode = Stop; KLD = 20872.043805
+Actual delta ll: 5.720166
+Elapsed time: 3.248000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.5280 split=0.3400 update=1.1920
+Times: edges=0.0160 ll=0.3360 efx=0.3080 1dsearch=0.0040
+Times: emp_p=0.1840 exp_p=0.3800 score2d=0.5080
+
+SPLIT 50:
+Recomputed: 1 splits, 2 features; worst-case edges: 59
+Delta edges: 59 ; ll: 5.137512
+Total edges: 2716 ; Depth: 18
+Errcode = Stop; KLD = 20864.365051
+Actual delta ll: 7.678755
+Elapsed time: 3.304000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.5360 split=0.3600 update=1.2200
+Times: edges=0.0160 ll=0.3400 efx=0.3080 1dsearch=0.0040
+Times: emp_p=0.1840 exp_p=0.3800 score2d=0.5120
+
+SPLIT 51:
+Recomputed: 2 splits, 4 features; worst-case edges: 45
+Delta edges: 9 ; ll: 3.872459
+Total edges: 2725 ; Depth: 18
+Errcode = Stop; KLD = 20858.309700
+Actual delta ll: 6.055351
+Elapsed time: 3.364000 seconds
+Delta time: 0.060000 seconds
+Times: pick=0.5440 split=0.3680 update=1.2640
+Times: edges=0.0160 ll=0.3440 efx=0.3120 1dsearch=0.0040
+Times: emp_p=0.1840 exp_p=0.3800 score2d=0.5120
+
+SPLIT 52:
+Recomputed: 1 splits, 1 features; worst-case edges: 45
+Delta edges: 45 ; ll: 4.851244
+Total edges: 2770 ; Depth: 18
+Errcode = Stop; KLD = 20853.230046
+Actual delta ll: 5.079654
+Elapsed time: 3.404000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.5480 split=0.3880 update=1.2800
+Times: edges=0.0160 ll=0.3440 efx=0.3120 1dsearch=0.0040
+Times: emp_p=0.1840 exp_p=0.3840 score2d=0.5120
+
+SPLIT 53:
+Recomputed: 20 splits, 22 features; worst-case edges: 59
+Delta edges: 23 ; ll: 4.161619
+Total edges: 2793 ; Depth: 18
+Errcode = Stop; KLD = 20847.677735
+Actual delta ll: 5.552311
+Elapsed time: 3.488000 seconds
+Delta time: 0.084000 seconds
+Times: pick=0.5760 split=0.4080 update=1.3160
+Times: edges=0.0160 ll=0.3680 efx=0.3320 1dsearch=0.0040
+Times: emp_p=0.1840 exp_p=0.3840 score2d=0.5200
+
+SPLIT 54:
+Recomputed: 10 splits, 16 features; worst-case edges: 59
+Learning converged with edge penalty of 0.025000.
+Continuing with new edge cost of 0.012500.
+Recomputed: 17 splits, 12 features; worst-case edges: 116
+Delta edges: 63 ; ll: 4.871837
+Total edges: 2856 ; Depth: 18
+Errcode = Stop; KLD = 20842.102108
+Actual delta ll: 5.575627
+Elapsed time: 3.584000 seconds
+Delta time: 0.096000 seconds
+Times: pick=0.6280 split=0.4160 update=1.3520
+Times: edges=0.0160 ll=0.3960 efx=0.3600 1dsearch=0.0040
+Times: emp_p=0.1880 exp_p=0.3840 score2d=0.5200
+
+SPLIT 55:
+Recomputed: 6 splits, 6 features; worst-case edges: 93
+Delta edges: 58 ; ll: 4.655242
+Total edges: 2914 ; Depth: 20
+Errcode = Stop; KLD = 20837.027639
+Actual delta ll: 5.074469
+Elapsed time: 3.628000 seconds
+Delta time: 0.044000 seconds
+Times: pick=0.6480 split=0.4240 update=1.3680
+Times: edges=0.0160 ll=0.4120 efx=0.3760 1dsearch=0.0040
+Times: emp_p=0.1880 exp_p=0.3840 score2d=0.5240
+
+SPLIT 56:
+Recomputed: 7 splits, 10 features; worst-case edges: 87
+Delta edges: 25 ; ll: 4.084708
+Total edges: 2939 ; Depth: 20
+Errcode = Stop; KLD = 20831.667480
+Actual delta ll: 5.360158
+Elapsed time: 3.668000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.6600 split=0.4320 update=1.3880
+Times: edges=0.0160 ll=0.4240 efx=0.3880 1dsearch=0.0040
+Times: emp_p=0.1880 exp_p=0.3840 score2d=0.5280
+
+SPLIT 57:
+Recomputed: 1 splits, 1 features; worst-case edges: 32
+Delta edges: 32 ; ll: 4.343606
+Total edges: 2971 ; Depth: 20
+Errcode = Stop; KLD = 20826.124919
+Actual delta ll: 5.542561
+Elapsed time: 3.724000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.6640 split=0.4520 update=1.4200
+Times: edges=0.0160 ll=0.4240 efx=0.3880 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3840 score2d=0.5280
+
+SPLIT 58:
+Recomputed: 18 splits, 21 features; worst-case edges: 116
+Delta edges: 11 ; ll: 3.838128
+Total edges: 2982 ; Depth: 20
+Errcode = Stop; KLD = 20821.151071
+Actual delta ll: 4.973849
+Elapsed time: 3.808000 seconds
+Delta time: 0.084000 seconds
+Times: pick=0.6920 split=0.4600 update=1.4680
+Times: edges=0.0160 ll=0.4520 efx=0.4160 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3840 score2d=0.5360
+
+SPLIT 59:
+Recomputed: 1 splits, 3 features; worst-case edges: 77
+Learning converged with edge penalty of 0.012500.
+Continuing with new edge cost of 0.006250.
+Recomputed: 11 splits, 9 features; worst-case edges: 224
+Delta edges: 65 ; ll: 4.542890
+Total edges: 3047 ; Depth: 20
+Errcode = Stop; KLD = 20814.430521
+Actual delta ll: 6.720550
+Elapsed time: 3.864000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.7320 split=0.4640 update=1.4800
+Times: edges=0.0160 ll=0.4680 efx=0.4280 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3840 score2d=0.5400
+
+SPLIT 60:
+Recomputed: 2 splits, 3 features; worst-case edges: 121
+Delta edges: 121 ; ll: 4.771962
+Total edges: 3168 ; Depth: 20
+Errcode = Stop; KLD = 20807.456692
+Actual delta ll: 6.973828
+Elapsed time: 3.912000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.7360 split=0.4680 update=1.5200
+Times: edges=0.0160 ll=0.4720 efx=0.4320 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3880 score2d=0.5400
+
+SPLIT 61:
+Recomputed: 2 splits, 4 features; worst-case edges: 94
+Delta edges: 94 ; ll: 4.517860
+Total edges: 3262 ; Depth: 20
+Errcode = Stop; KLD = 20801.472803
+Actual delta ll: 5.983890
+Elapsed time: 3.972000 seconds
+Delta time: 0.060000 seconds
+Times: pick=0.7560 split=0.4760 update=1.5520
+Times: edges=0.0160 ll=0.4800 efx=0.4400 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3880 score2d=0.5400
+
+SPLIT 62:
+Recomputed: 9 splits, 6 features; worst-case edges: 205
+Delta edges: 11 ; ll: 3.840621
+Total edges: 3273 ; Depth: 20
+Errcode = Stop; KLD = 20796.300664
+Actual delta ll: 5.172138
+Elapsed time: 4.044000 seconds
+Delta time: 0.072000 seconds
+Times: pick=0.7720 split=0.4840 update=1.6000
+Times: edges=0.0240 ll=0.4840 efx=0.4440 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3920 score2d=0.5440
+
+SPLIT 63:
+Recomputed: 1 splits, 1 features; worst-case edges: 11
+Delta edges: 11 ; ll: 3.834171
+Total edges: 3284 ; Depth: 20
+Errcode = Stop; KLD = 20790.672698
+Actual delta ll: 5.627967
+Elapsed time: 4.084000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.7760 split=0.4960 update=1.6240
+Times: edges=0.0240 ll=0.4840 efx=0.4440 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3960 score2d=0.5440
+
+SPLIT 64:
+Recomputed: 3 splits, 4 features; worst-case edges: 205
+Delta edges: 205 ; ll: 4.993560
+Total edges: 3489 ; Depth: 22
+Errcode = Stop; KLD = 20785.214674
+Actual delta ll: 5.458024
+Elapsed time: 4.108000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.7800 split=0.5040 update=1.6360
+Times: edges=0.0240 ll=0.4880 efx=0.4480 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3960 score2d=0.5440
+
+SPLIT 65:
+Recomputed: 3 splits, 4 features; worst-case edges: 26
+Delta edges: 9 ; ll: 3.743622
+Total edges: 3498 ; Depth: 22
+Errcode = Stop; KLD = 20779.743563
+Actual delta ll: 5.471111
+Elapsed time: 4.156000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.7880 split=0.5200 update=1.6600
+Times: edges=0.0240 ll=0.4920 efx=0.4520 1dsearch=0.0040
+Times: emp_p=0.1920 exp_p=0.3960 score2d=0.5440
+
+SPLIT 66:
+Recomputed: 10 splits, 11 features; worst-case edges: 227
+Delta edges: 37 ; ll: 4.004887
+Total edges: 3535 ; Depth: 22
+Errcode = Stop; KLD = 20775.075045
+Actual delta ll: 4.668518
+Elapsed time: 4.192000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.8000 split=0.5280 update=1.6760
+Times: edges=0.0240 ll=0.5000 efx=0.4600 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.3960 score2d=0.5440
+
+SPLIT 67:
+Recomputed: 3 splits, 5 features; worst-case edges: 18
+Learning converged with edge penalty of 0.006250.
+Continuing with new edge cost of 0.003125.
+Recomputed: 17 splits, 12 features; worst-case edges: 426
+Delta edges: 326 ; ll: 4.719095
+Total edges: 3861 ; Depth: 24
+Errcode = Stop; KLD = 20768.742844
+Actual delta ll: 6.332201
+Elapsed time: 4.268000 seconds
+Delta time: 0.076000 seconds
+Times: pick=0.8480 split=0.5360 update=1.6960
+Times: edges=0.0240 ll=0.5240 efx=0.4840 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.3960 score2d=0.5480
+
+SPLIT 68:
+Recomputed: 15 splits, 14 features; worst-case edges: 454
+Delta edges: 31 ; ll: 3.708240
+Total edges: 3892 ; Depth: 24
+Errcode = Stop; KLD = 20762.956532
+Actual delta ll: 5.786313
+Elapsed time: 4.328000 seconds
+Delta time: 0.060000 seconds
+Times: pick=0.8720 split=0.5440 update=1.7240
+Times: edges=0.0360 ll=0.5360 efx=0.4960 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.3960 score2d=0.5480
+
+SPLIT 69:
+Recomputed: 2 splits, 3 features; worst-case edges: 51
+Delta edges: 21 ; ll: 3.656765
+Total edges: 3913 ; Depth: 26
+Errcode = Stop; KLD = 20758.507624
+Actual delta ll: 4.448908
+Elapsed time: 4.360000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.8760 split=0.5520 update=1.7440
+Times: edges=0.0360 ll=0.5360 efx=0.4960 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.4000 score2d=0.5520
+
+SPLIT 70:
+Recomputed: 7 splits, 9 features; worst-case edges: 454
+Delta edges: 13 ; ll: 3.697011
+Total edges: 3926 ; Depth: 26
+Errcode = Stop; KLD = 20752.796313
+Actual delta ll: 5.711311
+Elapsed time: 4.428000 seconds
+Delta time: 0.068000 seconds
+Times: pick=0.8960 split=0.5640 update=1.7800
+Times: edges=0.0400 ll=0.5520 efx=0.5120 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.4040 score2d=0.5520
+
+SPLIT 71:
+Recomputed: 1 splits, 1 features; worst-case edges: 11
+Delta edges: 11 ; ll: 3.617710
+Total edges: 3937 ; Depth: 26
+Errcode = Stop; KLD = 20748.038885
+Actual delta ll: 4.757429
+Elapsed time: 4.460000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.9000 split=0.5720 update=1.8000
+Times: edges=0.0400 ll=0.5520 efx=0.5120 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.4080 score2d=0.5560
+
+SPLIT 72:
+Recomputed: 13 splits, 12 features; worst-case edges: 372
+Learning converged with edge penalty of 0.003125.
+Continuing with new edge cost of 0.001563.
+Recomputed: 6 splits, 6 features; worst-case edges: 755
+Delta edges: 310 ; ll: 4.487476
+Total edges: 4247 ; Depth: 29
+Errcode = Stop; KLD = 20742.006031
+Actual delta ll: 6.032854
+Elapsed time: 4.564000 seconds
+Delta time: 0.104000 seconds
+Times: pick=0.9560 split=0.5880 update=1.8320
+Times: edges=0.0400 ll=0.5880 efx=0.5480 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.4080 score2d=0.5600
+
+SPLIT 73:
+Recomputed: 6 splits, 5 features; worst-case edges: 800
+Delta edges: 800 ; ll: 4.972365
+Total edges: 5047 ; Depth: 31
+Errcode = Stop; KLD = 20734.808491
+Actual delta ll: 7.197540
+Elapsed time: 4.636000 seconds
+Delta time: 0.072000 seconds
+Times: pick=0.9680 split=0.6000 update=1.8800
+Times: edges=0.0440 ll=0.5920 efx=0.5520 1dsearch=0.0040
+Times: emp_p=0.1960 exp_p=0.4160 score2d=0.5600
+
+SPLIT 74:
+Recomputed: 12 splits, 11 features; worst-case edges: 301
+Learning converged with edge penalty of 0.001563.
+Continuing with new edge cost of 0.000781.
+Recomputed: 8 splits, 6 features; worst-case edges: 574
+Delta edges: 455 ; ll: 4.024723
+Total edges: 5502 ; Depth: 33
+Errcode = Stop; KLD = 20730.487006
+Actual delta ll: 4.321485
+Elapsed time: 4.752000 seconds
+Delta time: 0.116000 seconds
+Times: pick=1.0480 split=0.6120 update=1.9040
+Times: edges=0.0480 ll=0.6280 efx=0.5840 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4160 score2d=0.5640
+
+SPLIT 75:
+Recomputed: 9 splits, 9 features; worst-case edges: 573
+Delta edges: 88 ; ll: 3.657664
+Total edges: 5590 ; Depth: 33
+Errcode = Stop; KLD = 20726.384072
+Actual delta ll: 4.102934
+Elapsed time: 4.856000 seconds
+Delta time: 0.104000 seconds
+Times: pick=1.0720 split=0.6400 update=1.9560
+Times: edges=0.0520 ll=0.6440 efx=0.5960 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4160 score2d=0.5640
+
+SPLIT 76:
+Recomputed: 4 splits, 5 features; worst-case edges: 573
+Learning converged with edge penalty of 0.000781.
+Continuing with new edge cost of 0.000391.
+Recomputed: 7 splits, 6 features; worst-case edges: 1145
+Delta edges: 267 ; ll: 3.729153
+Total edges: 5857 ; Depth: 35
+Errcode = Stop; KLD = 20721.196169
+Actual delta ll: 5.187903
+Elapsed time: 4.968000 seconds
+Delta time: 0.112000 seconds
+Times: pick=1.1240 split=0.6480 update=2.0080
+Times: edges=0.0560 ll=0.6600 efx=0.6120 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4160 score2d=0.5680
+
+SPLIT 77:
+Recomputed: 6 splits, 7 features; worst-case edges: 1148
+Delta edges: 153 ; ll: 3.666702
+Total edges: 6010 ; Depth: 35
+Errcode = Stop; KLD = 20716.392380
+Actual delta ll: 4.803789
+Elapsed time: 5.072000 seconds
+Delta time: 0.104000 seconds
+Times: pick=1.1480 split=0.6680 update=2.0680
+Times: edges=0.0600 ll=0.6800 efx=0.6320 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4200 score2d=0.5680
+
+SPLIT 78:
+Recomputed: 5 splits, 5 features; worst-case edges: 1151
+Learning converged with edge penalty of 0.000391.
+Continuing with new edge cost of 0.000195.
+Recomputed: 3 splits, 3 features; worst-case edges: 1198
+Delta edges: 1198 ; ll: 3.993198
+Total edges: 7208 ; Depth: 38
+Errcode = Stop; KLD = 20712.110433
+Actual delta ll: 4.281947
+Elapsed time: 5.192000 seconds
+Delta time: 0.120000 seconds
+Times: pick=1.2000 split=0.6840 update=2.1200
+Times: edges=0.0640 ll=0.6960 efx=0.6400 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4240 score2d=0.5720
+
+SPLIT 79:
+Recomputed: 1 splits, 1 features; worst-case edges: 1247
+Delta edges: 1247 ; ll: 3.891978
+Total edges: 8455 ; Depth: 40
+Errcode = Stop; KLD = 20706.656942
+Actual delta ll: 5.453492
+Elapsed time: 5.288000 seconds
+Delta time: 0.096000 seconds
+Times: pick=1.2080 split=0.7160 update=2.1720
+Times: edges=0.0640 ll=0.6960 efx=0.6400 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4280 score2d=0.5720
+
+SPLIT 80:
+Recomputed: 3 splits, 3 features; worst-case edges: 1164
+Learning converged with edge penalty of 0.000195.
+Continuing with new edge cost of 0.000098.
+Recomputed: 2 splits, 2 features; worst-case edges: 2326
+Learning converged with edge penalty of 0.000098.
+Continuing with new edge cost of 0.000049.
+Recomputed: 1 splits, 1 features; worst-case edges: 3778
+Delta edges: 3778 ; ll: 3.783784
+Total edges: 12233 ; Depth: 42
+Errcode = Stop; KLD = 20702.412116
+Actual delta ll: 4.244826
+Elapsed time: 5.480000 seconds
+Delta time: 0.192000 seconds
+Times: pick=1.3040 split=0.7320 update=2.2520
+Times: edges=0.0720 ll=0.7120 efx=0.6520 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4360 score2d=0.5720
+
+SPLIT 81:
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000049.
+Continuing with new edge cost of 0.000024.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000024.
+Continuing with new edge cost of 0.000012.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000012.
+Continuing with new edge cost of 0.000006.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000006.
+Continuing with new edge cost of 0.000003.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000003.
+Continuing with new edge cost of 0.000002.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000002.
+Continuing with new edge cost of 0.000001.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000001.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 113
+Delta edges: 113 ; ll: 3.764394
+Total edges: 12346 ; Depth: 44
+Errcode = Stop; KLD = 20697.237757
+Actual delta ll: 5.174359
+Elapsed time: 6.228000 seconds
+Delta time: 0.748000 seconds
+Times: pick=1.9760 split=0.7440 update=2.3160
+Times: edges=0.0720 ll=0.7560 efx=0.6880 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4440 score2d=0.5720
+
+SPLIT 82:
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 10
+Delta edges: 10 ; ll: 3.716915
+Total edges: 12356 ; Depth: 44
+Errcode = Stop; KLD = 20691.602164
+Actual delta ll: 5.635593
+Elapsed time: 6.732000 seconds
+Delta time: 0.504000 seconds
+Times: pick=2.3480 split=0.7640 update=2.4280
+Times: edges=0.0720 ll=0.7880 efx=0.7200 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4520 score2d=0.5720
+
+SPLIT 83:
+Recomputed: 1 splits, 1 features; worst-case edges: 303
+Delta edges: 303 ; ll: 3.674040
+Total edges: 12659 ; Depth: 45
+Errcode = Stop; KLD = 20687.089588
+Actual delta ll: 4.512576
+Elapsed time: 6.840000 seconds
+Delta time: 0.108000 seconds
+Times: pick=2.3600 split=0.7800 update=2.5080
+Times: edges=0.0720 ll=0.7920 efx=0.7240 1dsearch=0.0080
+Times: emp_p=0.1960 exp_p=0.4560 score2d=0.5760
+
+SPLIT 84:
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 487
+Delta edges: 487 ; ll: 3.621132
+Total edges: 13146 ; Depth: 47
+Errcode = Stop; KLD = 20682.237608
+Actual delta ll: 4.851979
+Elapsed time: 6.996000 seconds
+Delta time: 0.156000 seconds
+Times: pick=2.4120 split=0.8000 update=2.5920
+Times: edges=0.0720 ll=0.8000 efx=0.7320 1dsearch=0.0080
+Times: emp_p=0.2000 exp_p=0.4600 score2d=0.5800
+
+SPLIT 85:
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 39
+Delta edges: 39 ; ll: 3.580633
+Total edges: 13185 ; Depth: 48
+Errcode = Stop; KLD = 20677.118411
+Actual delta ll: 5.119197
+Elapsed time: 7.704000 seconds
+Delta time: 0.708000 seconds
+Times: pick=3.0400 split=0.8200 update=2.6520
+Times: edges=0.0720 ll=0.8440 efx=0.7680 1dsearch=0.0080
+Times: emp_p=0.2000 exp_p=0.4640 score2d=0.5800
+
+SPLIT 86:
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 11 splits, 12 features; worst-case edges: 1656
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 10 splits, 10 features; worst-case edges: 2
+Delta edges: 2 ; ll: 3.615147
+WARNING: Actual delta edges = 9
+Total edges: 13194 ; Depth: 48
+Errcode = Stop; KLD = 20670.156816
+Actual delta ll: 6.961596
+Elapsed time: 9.320000 seconds
+Delta time: 1.616000 seconds
+Times: pick=4.5160 split=0.8400 update=2.7720
+Times: edges=0.1240 ll=1.1920 efx=1.0960 1dsearch=0.0080
+Times: emp_p=0.2000 exp_p=0.4720 score2d=0.5800
+
+SPLIT 87:
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Delta edges: 2 ; ll: 3.830480
+WARNING: Actual delta edges = 7481
+Total edges: 20675 ; Depth: 50
+Errcode = Stop; KLD = 20663.747152
+Actual delta ll: 6.409663
+Elapsed time: 10.896000 seconds
+Delta time: 1.576000 seconds
+Times: pick=5.8840 split=0.8840 update=2.9360
+Times: edges=0.1560 ll=1.4280 efx=1.3320 1dsearch=0.0120
+Times: emp_p=0.2000 exp_p=0.4840 score2d=0.5800
+
+SPLIT 88:
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 7 splits, 7 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 7 splits, 7 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 8 splits, 8 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 6 splits, 6 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 4 splits, 4 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 2 splits, 2 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 5 splits, 5 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 1 splits, 1 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost of 0.000000.
+Recomputed: 3 splits, 3 features; worst-case edges: 2
+Learning converged with edge penalty of 0.000000.
+Continuing with new edge cost 

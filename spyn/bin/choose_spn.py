@@ -106,11 +106,11 @@ class ChooserSPN(object):
                       learn_start_t = perf_counter()
                           
                       # build an spn on the training set
-                      spn = learner.fit_structure(data=train,
-                                                  feature_sizes=features)
-                      # spn = learner.fit_structure_bagging(data=train,
-                      #                                     feature_sizes=features,
-                      #                                     n_components=10)
+                      #spn = learner.fit_structure(data=train,
+                      #                            feature_sizes=features)
+                      spn = learner.fit_structure_bagging(data=train,
+                                                           feature_sizes=features,
+                                                           n_components=10)
 
                       learn_end_t = perf_counter()
                       n_edges = spn.n_edges()

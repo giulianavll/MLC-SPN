@@ -85,5 +85,5 @@ for f in range(0,val):
     #Train a classifier
     c.create_classifier()
 
-#Classify and get files with the results for Hamming Score, Exact match and  Accuracy 
-#c.get_metrics()
+    #Classify and get files with the results for Hamming Score, Exact match and  Accuracy 
+    #c.get_metrics()

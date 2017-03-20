@@ -45,6 +45,8 @@ class Node(object):
         self.log_der = LOG_ZERO
 
         self.var_scope = var_scope
+        #for mpe_eval 
+        self.val_mpe = {}
 
     def __repr__(self):
         return 'id: {id} scope: {scope}'.format(id=self.id,
@@ -229,6 +231,7 @@ class SumNode(Node):
             w_sum = node.log_val + log_weight
             if w_sum > self.log_val:
                 self.log_val = w_sum
+                self.val_mpe = node.val_mpe  #save value mpe
 
     def backprop(self):
         """
@@ -382,7 +385,8 @@ class ProductNode(Node):
                 self.zero_children += 1
 
             self.log_val += node.log_val
-
+            if(bool(node.val_mpe)):
+                self.val_mpe.update(node.val_mpe)
         #
         # numba
         # self.log_val = \
@@ -395,6 +399,7 @@ class ProductNode(Node):
         Just redirecting normal evaluation
         """
         self.eval()
+
 
     def backprop(self):
         """
@@ -570,6 +575,7 @@ class CategoricalIndicatorNode(Node):
         Just redirecting normal evaluation
         """
         self.eval(obs)
+        self.val_mpe [self.var]=self.var_val
 
     def n_children(self):
         return 0
@@ -702,9 +708,11 @@ class CLTreeNode(Node):
 
 
 @numba.njit
+
 def eval_numba(obs, vars):
+
     if obs == MARG_IND:
-        return 0.
+        return 0.  
     else:
         return vars[obs]
 
@@ -799,14 +807,25 @@ class CategoricalSmoothedNode(Node):
         """
         WRITEME
         """
-
         self.log_der = LOG_ZERO
 
         # if obs == MARG_IND:
         #     self.log_val = 0.
         # else:
         #     self.log_val = self._var_probs[obs]
-        self.log_val = eval_numba(obs, self._var_probs)
+
+        if obs ==-2: 
+          max_prob = -1000000000
+          max_val = -3
+          for i,prob in enumerate(self._var_probs):
+              if max_prob < prob:
+                  max_prob = prob
+                  max_val=i
+          self.val_mpe[self.var]=max_val   
+          self.log_val=max_prob     
+
+        else:
+            self.log_val = eval_numba(obs, self._var_probs)
 
     def mpe_eval(self, obs):
         """

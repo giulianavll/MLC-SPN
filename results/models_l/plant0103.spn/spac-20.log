@@ -1,0 +1,1373 @@
+Initial log likelihood: -13169.458050
+Initializing took 1.208000 seconds.
+
+SPLIT 1:
+Recomputed: 1 splits, 1 features; worst-case edges: 9
+Delta edges: 9 ; ll: 11.577317
+Total edges: 2053 ; Depth: 7
+Errcode = Stop; KLD = 14764.528301
+Actual delta ll: -1595.070252
+Elapsed time: 1.244000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.0040 split=0.0080 update=0.0240
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1480 exp_p=0.2440 score2d=0.4280
+
+SPLIT 2:
+Recomputed: 1 splits, 1 features; worst-case edges: 9
+Delta edges: 9 ; ll: 10.120637
+Total edges: 2062 ; Depth: 7
+Errcode = Stop; KLD = 14752.507186
+Actual delta ll: 12.021115
+Elapsed time: 1.268000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.0080 split=0.0120 update=0.0400
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1480 exp_p=0.2480 score2d=0.4320
+
+SPLIT 3:
+Recomputed: 1 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 8.192956
+Total edges: 2071 ; Depth: 7
+Errcode = Stop; KLD = 14741.422367
+Actual delta ll: 11.084819
+Elapsed time: 1.308000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.0080 split=0.0160 update=0.0760
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1480 exp_p=0.2560 score2d=0.4320
+
+SPLIT 4:
+Recomputed: 1 splits, 2 features; worst-case edges: 9
+Delta edges: 9 ; ll: 7.164589
+Total edges: 2080 ; Depth: 7
+Errcode = Stop; KLD = 14730.815677
+Actual delta ll: 10.606690
+Elapsed time: 1.344000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.0200 split=0.0200 update=0.0960
+Times: edges=0.0000 ll=0.0000 efx=0.0000 1dsearch=0.0000
+Times: emp_p=0.1480 exp_p=0.2600 score2d=0.4320
+
+SPLIT 5:
+Recomputed: 3 splits, 9 features; worst-case edges: 25
+Delta edges: 9 ; ll: 6.300032
+Total edges: 2089 ; Depth: 7
+Errcode = Stop; KLD = 14722.450325
+Actual delta ll: 8.365352
+Elapsed time: 1.380000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.0280 split=0.0240 update=0.1200
+Times: edges=0.0000 ll=0.0040 efx=0.0040 1dsearch=0.0000
+Times: emp_p=0.1480 exp_p=0.2600 score2d=0.4360
+
+SPLIT 6:
+Recomputed: 7 splits, 8 features; worst-case edges: 18
+Delta edges: 13 ; ll: 5.939220
+Total edges: 2102 ; Depth: 7
+Errcode = Stop; KLD = 14714.398351
+Actual delta ll: 8.051974
+Elapsed time: 1.436000 seconds
+Delta time: 0.056000 seconds
+Times: pick=0.0560 split=0.0280 update=0.1440
+Times: edges=0.0040 ll=0.0240 efx=0.0240 1dsearch=0.0000
+Times: emp_p=0.1480 exp_p=0.2600 score2d=0.4400
+
+SPLIT 7:
+Recomputed: 1 splits, 3 features; worst-case edges: 9
+Delta edges: 9 ; ll: 5.474177
+Total edges: 2111 ; Depth: 7
+Errcode = Stop; KLD = 14706.389016
+Actual delta ll: 8.009335
+Elapsed time: 1.468000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.0600 split=0.0320 update=0.1680
+Times: edges=0.0040 ll=0.0280 efx=0.0280 1dsearch=0.0000
+Times: emp_p=0.1480 exp_p=0.2600 score2d=0.4400
+
+SPLIT 8:
+Recomputed: 5 splits, 7 features; worst-case edges: 25
+Delta edges: 13 ; ll: 5.638679
+Total edges: 2124 ; Depth: 7
+Errcode = Stop; KLD = 14699.142970
+Actual delta ll: 7.246046
+Elapsed time: 1.532000 seconds
+Delta time: 0.064000 seconds
+Times: pick=0.0800 split=0.0400 update=0.2040
+Times: edges=0.0040 ll=0.0440 efx=0.0440 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2600 score2d=0.4440
+
+SPLIT 9:
+Recomputed: 1 splits, 2 features; worst-case edges: 13
+Delta edges: 13 ; ll: 5.603617
+Total edges: 2137 ; Depth: 7
+Errcode = Stop; KLD = 14690.892595
+Actual delta ll: 8.250375
+Elapsed time: 1.564000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.0840 split=0.0440 update=0.2280
+Times: edges=0.0040 ll=0.0440 efx=0.0440 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2600 score2d=0.4480
+
+SPLIT 10:
+Recomputed: 2 splits, 4 features; worst-case edges: 19
+Delta edges: 16 ; ll: 5.849809
+Total edges: 2153 ; Depth: 10
+Errcode = Stop; KLD = 14684.315548
+Actual delta ll: 6.577046
+Elapsed time: 1.588000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.0880 split=0.0480 update=0.2440
+Times: edges=0.0040 ll=0.0480 efx=0.0440 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2600 score2d=0.4520
+
+SPLIT 11:
+Recomputed: 1 splits, 7 features; worst-case edges: 9
+Delta edges: 9 ; ll: 5.023510
+Total edges: 2162 ; Depth: 10
+Errcode = Stop; KLD = 14678.086718
+Actual delta ll: 6.228830
+Elapsed time: 1.640000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.1080 split=0.0560 update=0.2680
+Times: edges=0.0040 ll=0.0640 efx=0.0600 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2640 score2d=0.4520
+
+SPLIT 12:
+Recomputed: 2 splits, 3 features; worst-case edges: 19
+Delta edges: 19 ; ll: 5.939688
+Total edges: 2181 ; Depth: 10
+Errcode = Stop; KLD = 14670.967614
+Actual delta ll: 7.119104
+Elapsed time: 1.664000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.1120 split=0.0600 update=0.2840
+Times: edges=0.0040 ll=0.0640 efx=0.0600 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2680 score2d=0.4520
+
+SPLIT 13:
+Recomputed: 20 splits, 20 features; worst-case edges: 23
+Delta edges: 9 ; ll: 4.380197
+Total edges: 2190 ; Depth: 10
+Errcode = Stop; KLD = 14665.227811
+Actual delta ll: 5.739803
+Elapsed time: 1.728000 seconds
+Delta time: 0.064000 seconds
+Times: pick=0.1480 split=0.0640 update=0.3080
+Times: edges=0.0080 ll=0.0960 efx=0.0880 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2680 score2d=0.4560
+
+SPLIT 14:
+Recomputed: 6 splits, 8 features; worst-case edges: 18
+Delta edges: 9 ; ll: 4.288319
+Total edges: 2199 ; Depth: 10
+Errcode = Stop; KLD = 14659.120001
+Actual delta ll: 6.107811
+Elapsed time: 1.760000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.1600 split=0.0680 update=0.3240
+Times: edges=0.0080 ll=0.1040 efx=0.0960 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2680 score2d=0.4600
+
+SPLIT 15:
+Recomputed: 2 splits, 4 features; worst-case edges: 10
+Delta edges: 9 ; ll: 4.247264
+Total edges: 2208 ; Depth: 10
+Errcode = Stop; KLD = 14654.143651
+Actual delta ll: 4.976350
+Elapsed time: 1.812000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.1640 split=0.0840 update=0.3560
+Times: edges=0.0080 ll=0.1080 efx=0.1000 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2680 score2d=0.4600
+
+SPLIT 16:
+Recomputed: 2 splits, 4 features; worst-case edges: 14
+Delta edges: 9 ; ll: 4.195365
+Total edges: 2217 ; Depth: 10
+Errcode = Stop; KLD = 14648.428985
+Actual delta ll: 5.714666
+Elapsed time: 1.844000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.1720 split=0.0880 update=0.3760
+Times: edges=0.0080 ll=0.1080 efx=0.1000 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2680 score2d=0.4640
+
+SPLIT 17:
+Recomputed: 1 splits, 1 features; worst-case edges: 18
+Delta edges: 18 ; ll: 6.499526
+Total edges: 2235 ; Depth: 10
+Errcode = Stop; KLD = 14640.981023
+Actual delta ll: 7.447962
+Elapsed time: 1.868000 seconds
+Delta time: 0.024000 seconds
+Times: pick=0.1760 split=0.0920 update=0.3920
+Times: edges=0.0080 ll=0.1080 efx=0.1000 1dsearch=0.0000
+Times: emp_p=0.1520 exp_p=0.2680 score2d=0.4680
+
+SPLIT 18:
+Recomputed: 16 splits, 23 features; worst-case edges: 19
+Delta edges: 9 ; ll: 4.045073
+Total edges: 2244 ; Depth: 10
+Errcode = Stop; KLD = 14635.146326
+Actual delta ll: 5.834696
+Elapsed time: 1.944000 seconds
+Delta time: 0.076000 seconds
+Times: pick=0.2240 split=0.0960 update=0.4160
+Times: edges=0.0080 ll=0.1520 efx=0.1360 1dsearch=0.0040
+Times: emp_p=0.1520 exp_p=0.2720 score2d=0.4680
+
+SPLIT 19:
+Recomputed: 7 splits, 16 features; worst-case edges: 25
+Delta edges: 9 ; ll: 3.906053
+Total edges: 2253 ; Depth: 10
+Errcode = Stop; KLD = 14628.551017
+Actual delta ll: 6.595309
+Elapsed time: 1.992000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.2400 split=0.1040 update=0.4400
+Times: edges=0.0080 ll=0.1680 efx=0.1480 1dsearch=0.0040
+Times: emp_p=0.1520 exp_p=0.2720 score2d=0.4760
+
+SPLIT 20:
+Recomputed: 5 splits, 9 features; worst-case edges: 24
+Delta edges: 9 ; ll: 3.858367
+Total edges: 2262 ; Depth: 10
+Errcode = Stop; KLD = 14623.603993
+Actual delta ll: 4.947024
+Elapsed time: 2.044000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.2600 split=0.1080 update=0.4680
+Times: edges=0.0120 ll=0.1800 efx=0.1600 1dsearch=0.0040
+Times: emp_p=0.1520 exp_p=0.2720 score2d=0.4840
+
+SPLIT 21:
+Recomputed: 3 splits, 4 features; worst-case edges: 11
+Delta edges: 9 ; ll: 3.847618
+Total edges: 2271 ; Depth: 10
+Errcode = Stop; KLD = 14618.632602
+Actual delta ll: 4.971391
+Elapsed time: 2.080000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.2640 split=0.1160 update=0.4920
+Times: edges=0.0120 ll=0.1840 efx=0.1640 1dsearch=0.0040
+Times: emp_p=0.1520 exp_p=0.2720 score2d=0.4880
+
+SPLIT 22:
+Recomputed: 1 splits, 5 features; worst-case edges: 9
+Delta edges: 9 ; ll: 3.837388
+Total edges: 2280 ; Depth: 10
+Errcode = Stop; KLD = 14613.171037
+Actual delta ll: 5.461565
+Elapsed time: 2.240000 seconds
+Delta time: 0.160000 seconds
+Times: pick=0.3880 split=0.1320 update=0.5120
+Times: edges=0.0120 ll=0.1920 efx=0.1720 1dsearch=0.0040
+Times: emp_p=0.1520 exp_p=0.2760 score2d=0.4880
+
+SPLIT 23:
+Recomputed: 8 splits, 12 features; worst-case edges: 14
+Delta edges: 11 ; ll: 3.945969
+Total edges: 2291 ; Depth: 10
+Errcode = Stop; KLD = 14607.715549
+Actual delta ll: 5.455488
+Elapsed time: 2.292000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.4000 split=0.1480 update=0.5360
+Times: edges=0.0120 ll=0.2000 efx=0.1800 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2760 score2d=0.4880
+
+SPLIT 24:
+Recomputed: 6 splits, 9 features; worst-case edges: 10
+Delta edges: 10 ; ll: 3.767995
+Total edges: 2301 ; Depth: 10
+Errcode = Stop; KLD = 14601.694682
+Actual delta ll: 6.020868
+Elapsed time: 2.340000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.4120 split=0.1520 update=0.5680
+Times: edges=0.0120 ll=0.2080 efx=0.1880 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2760 score2d=0.4920
+
+SPLIT 25:
+Recomputed: 2 splits, 5 features; worst-case edges: 13
+Delta edges: 13 ; ll: 4.050517
+Total edges: 2314 ; Depth: 10
+Errcode = Stop; KLD = 14597.060504
+Actual delta ll: 4.634178
+Elapsed time: 2.376000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.4240 split=0.1640 update=0.5800
+Times: edges=0.0120 ll=0.2160 efx=0.1960 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2760 score2d=0.4920
+
+SPLIT 26:
+Recomputed: 2 splits, 3 features; worst-case edges: 11
+Delta edges: 11 ; ll: 3.827547
+Total edges: 2325 ; Depth: 11
+Errcode = Stop; KLD = 14590.757256
+Actual delta ll: 6.303248
+Elapsed time: 2.420000 seconds
+Delta time: 0.044000 seconds
+Times: pick=0.4280 split=0.1680 update=0.6160
+Times: edges=0.0120 ll=0.2160 efx=0.1960 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2760 score2d=0.5000
+
+SPLIT 27:
+Recomputed: 3 splits, 5 features; worst-case edges: 16
+Delta edges: 16 ; ll: 4.311416
+Total edges: 2341 ; Depth: 11
+Errcode = Stop; KLD = 14585.643358
+Actual delta ll: 5.113899
+Elapsed time: 2.452000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.4400 split=0.1720 update=0.6320
+Times: edges=0.0120 ll=0.2240 efx=0.2040 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2760 score2d=0.5080
+
+SPLIT 28:
+Recomputed: 6 splits, 6 features; worst-case edges: 14
+Delta edges: 9 ; ll: 3.591784
+Total edges: 2350 ; Depth: 11
+Errcode = Stop; KLD = 14580.443755
+Actual delta ll: 5.199603
+Elapsed time: 2.500000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.4440 split=0.1800 update=0.6680
+Times: edges=0.0120 ll=0.2280 efx=0.2080 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2760 score2d=0.5120
+
+SPLIT 29:
+Recomputed: 8 splits, 13 features; worst-case edges: 25
+Delta edges: 9 ; ll: 3.563232
+Total edges: 2359 ; Depth: 11
+Errcode = Stop; KLD = 14574.614156
+Actual delta ll: 5.829599
+Elapsed time: 2.560000 seconds
+Delta time: 0.060000 seconds
+Times: pick=0.4640 split=0.1920 update=0.6960
+Times: edges=0.0160 ll=0.2400 efx=0.2160 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2800 score2d=0.5120
+
+SPLIT 30:
+Recomputed: 19 splits, 22 features; worst-case edges: 22
+Delta edges: 22 ; ll: 4.787358
+Total edges: 2381 ; Depth: 11
+Errcode = Stop; KLD = 14567.126923
+Actual delta ll: 7.487233
+Elapsed time: 2.628000 seconds
+Delta time: 0.068000 seconds
+Times: pick=0.5080 split=0.1960 update=0.7160
+Times: edges=0.0160 ll=0.2800 efx=0.2560 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2800 score2d=0.5120
+
+SPLIT 31:
+Recomputed: 9 splits, 10 features; worst-case edges: 14
+Delta edges: 11 ; ll: 3.653848
+Total edges: 2392 ; Depth: 11
+Errcode = Stop; KLD = 14561.593157
+Actual delta ll: 5.533766
+Elapsed time: 2.676000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.5360 split=0.2040 update=0.7280
+Times: edges=0.0160 ll=0.3040 efx=0.2760 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2800 score2d=0.5120
+
+SPLIT 32:
+Recomputed: 4 splits, 6 features; worst-case edges: 24
+Delta edges: 11 ; ll: 3.675302
+Total edges: 2403 ; Depth: 11
+Errcode = Stop; KLD = 14555.383002
+Actual delta ll: 6.210156
+Elapsed time: 2.728000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.5480 split=0.2120 update=0.7600
+Times: edges=0.0160 ll=0.3120 efx=0.2840 1dsearch=0.0040
+Times: emp_p=0.1560 exp_p=0.2880 score2d=0.5120
+
+SPLIT 33:
+Recomputed: 14 splits, 23 features; worst-case edges: 13
+Learning converged with edge penalty of 0.100000.
+Continuing with new edge cost of 0.050000.
+Recomputed: 32 splits, 26 features; worst-case edges: 40
+Delta edges: 23 ; ll: 4.461068
+Total edges: 2426 ; Depth: 13
+Errcode = Stop; KLD = 14548.974925
+Actual delta ll: 6.408077
+Elapsed time: 2.856000 seconds
+Delta time: 0.128000 seconds
+Times: pick=0.6520 split=0.2200 update=0.7760
+Times: edges=0.0200 ll=0.3800 efx=0.3440 1dsearch=0.0080
+Times: emp_p=0.1560 exp_p=0.2920 score2d=0.5120
+
+SPLIT 34:
+Recomputed: 4 splits, 5 features; worst-case edges: 30
+Delta edges: 23 ; ll: 4.993823
+Total edges: 2449 ; Depth: 15
+Errcode = Stop; KLD = 14543.671415
+Actual delta ll: 5.303509
+Elapsed time: 2.884000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.6600 split=0.2240 update=0.7920
+Times: edges=0.0200 ll=0.3840 efx=0.3480 1dsearch=0.0080
+Times: emp_p=0.1560 exp_p=0.2920 score2d=0.5200
+
+SPLIT 35:
+Recomputed: 18 splits, 18 features; worst-case edges: 43
+Delta edges: 11 ; ll: 3.612120
+Total edges: 2460 ; Depth: 15
+Errcode = Stop; KLD = 14539.182346
+Actual delta ll: 4.489069
+Elapsed time: 2.936000 seconds
+Delta time: 0.052000 seconds
+Times: pick=0.6920 split=0.2280 update=0.8080
+Times: edges=0.0200 ll=0.4120 efx=0.3720 1dsearch=0.0080
+Times: emp_p=0.1560 exp_p=0.2960 score2d=0.5200
+
+SPLIT 36:
+Recomputed: 23 splits, 25 features; worst-case edges: 49
+Delta edges: 9 ; ll: 3.345375
+Total edges: 2469 ; Depth: 15
+Errcode = Stop; KLD = 14534.525975
+Actual delta ll: 4.656371
+Elapsed time: 2.984000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.7240 split=0.2320 update=0.8200
+Times: edges=0.0200 ll=0.4440 efx=0.4000 1dsearch=0.0080
+Times: emp_p=0.1560 exp_p=0.2960 score2d=0.5200
+
+SPLIT 37:
+Recomputed: 1 splits, 1 features; worst-case edges: 15
+Delta edges: 15 ; ll: 3.548350
+Total edges: 2484 ; Depth: 17
+Errcode = Stop; KLD = 14529.935319
+Actual delta ll: 4.590657
+Elapsed time: 3.016000 seconds
+Delta time: 0.032000 seconds
+Times: pick=0.7240 split=0.2360 update=0.8480
+Times: edges=0.0200 ll=0.4440 efx=0.4000 1dsearch=0.0080
+Times: emp_p=0.1560 exp_p=0.3000 score2d=0.5240
+
+SPLIT 38:
+Recomputed: 1 splits, 1 features; worst-case edges: 11
+Delta edges: 11 ; ll: 3.341042
+Total edges: 2495 ; Depth: 17
+Errcode = Stop; KLD = 14525.987885
+Actual delta ll: 3.947433
+Elapsed time: 3.044000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.7280 split=0.2440 update=0.8640
+Times: edges=0.0200 ll=0.4440 efx=0.4000 1dsearch=0.0080
+Times: emp_p=0.1560 exp_p=0.3040 score2d=0.5240
+
+SPLIT 39:
+Recomputed: 1 splits, 1 features; worst-case edges: 11
+Delta edges: 11 ; ll: 3.330686
+Total edges: 2506 ; Depth: 17
+Errcode = Stop; KLD = 14521.100991
+Actual delta ll: 4.886895
+Elapsed time: 3.080000 seconds
+Delta time: 0.036000 seconds
+Times: pick=0.7320 split=0.2480 update=0.8920
+Times: edges=0.0200 ll=0.4480 efx=0.4040 1dsearch=0.0080
+Times: emp_p=0.1560 exp_p=0.3080 score2d=0.5240
+
+SPLIT 40:
+Recomputed: 1 splits, 3 features; worst-case edges: 11
+Delta edges: 11 ; ll: 3.324604
+Total edges: 2517 ; Depth: 17
+Errcode = Stop; KLD = 14516.100056
+Actual delta ll: 5.000935
+Elapsed time: 3.128000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.7400 split=0.2640 update=0.9160
+Times: edges=0.0200 ll=0.4520 efx=0.4080 1dsearch=0.0080
+Times: emp_p=0.1600 exp_p=0.3080 score2d=0.5240
+
+SPLIT 41:
+Recomputed: 4 splits, 3 features; worst-case edges: 19
+Delta edges: 19 ; ll: 3.665961
+Total edges: 2536 ; Depth: 17
+Errcode = Stop; KLD = 14510.381655
+Actual delta ll: 5.718401
+Elapsed time: 3.172000 seconds
+Delta time: 0.044000 seconds
+Times: pick=0.7440 split=0.2720 update=0.9480
+Times: edges=0.0200 ll=0.4520 efx=0.4080 1dsearch=0.0080
+Times: emp_p=0.1640 exp_p=0.3120 score2d=0.5240
+
+SPLIT 42:
+Recomputed: 2 splits, 4 features; worst-case edges: 16
+Delta edges: 11 ; ll: 3.228235
+Total edges: 2547 ; Depth: 17
+Errcode = Stop; KLD = 14504.484368
+Actual delta ll: 5.897287
+Elapsed time: 3.212000 seconds
+Delta time: 0.040000 seconds
+Times: pick=0.7560 split=0.2840 update=0.9640
+Times: edges=0.0200 ll=0.4600 efx=0.4160 1dsearch=0.0080
+Times: emp_p=0.1640 exp_p=0.3120 score2d=0.5240
+
+SPLIT 43:
+Recomputed: 1 splits, 2 features; worst-case edges: 11
+Delta edges: 11 ; ll: 3.225226
+Total edges: 2558 ; Depth: 17
+Errcode = Stop; KLD = 14499.849735
+Actual delta ll: 4.634633
+Elapsed time: 3.240000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.7600 split=0.2920 update=0.9800
+Times: edges=0.0200 ll=0.4600 efx=0.4160 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5240
+
+SPLIT 44:
+Recomputed: 4 splits, 4 features; worst-case edges: 48
+Delta edges: 9 ; ll: 3.121983
+Total edges: 2567 ; Depth: 17
+Errcode = Stop; KLD = 14496.113114
+Actual delta ll: 3.736621
+Elapsed time: 3.300000 seconds
+Delta time: 0.060000 seconds
+Times: pick=0.7720 split=0.3040 update=1.0160
+Times: edges=0.0200 ll=0.4680 efx=0.4240 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5280
+
+SPLIT 45:
+Recomputed: 3 splits, 4 features; worst-case edges: 12
+Delta edges: 9 ; ll: 3.377199
+Total edges: 2576 ; Depth: 17
+Errcode = Stop; KLD = 14490.191294
+Actual delta ll: 5.921820
+Elapsed time: 3.328000 seconds
+Delta time: 0.028000 seconds
+Times: pick=0.7760 split=0.3080 update=1.0360
+Times: edges=0.0200 ll=0.4720 efx=0.4280 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5280
+
+SPLIT 46:
+Recomputed: 10 splits, 13 features; worst-case edges: 26
+Delta edges: 9 ; ll: 3.117733
+Total edges: 2585 ; Depth: 17
+Errcode = Stop; KLD = 14485.299697
+Actual delta ll: 4.891597
+Elapsed time: 3.392000 seconds
+Delta time: 0.064000 seconds
+Times: pick=0.8000 split=0.3280 update=1.0560
+Times: edges=0.0200 ll=0.4960 efx=0.4520 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5360
+
+SPLIT 47:
+Recomputed: 8 splits, 10 features; worst-case edges: 18
+Delta edges: 11 ; ll: 3.186135
+Total edges: 2596 ; Depth: 17
+Errcode = Stop; KLD = 14480.016842
+Actual delta ll: 5.282855
+Elapsed time: 3.456000 seconds
+Delta time: 0.064000 seconds
+Times: pick=0.8120 split=0.3320 update=1.1040
+Times: edges=0.0200 ll=0.5080 efx=0.4640 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5360
+
+SPLIT 48:
+Recomputed: 9 splits, 17 features; worst-case edges: 32
+Delta edges: 11 ; ll: 3.138508
+Total edges: 2607 ; Depth: 17
+Errcode = Stop; KLD = 14475.242220
+Actual delta ll: 4.774623
+Elapsed time: 3.532000 seconds
+Delta time: 0.076000 seconds
+Times: pick=0.8320 split=0.3440 update=1.1480
+Times: edges=0.0200 ll=0.5240 efx=0.4720 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5400
+
+SPLIT 49:
+Recomputed: 8 splits, 12 features; worst-case edges: 27
+Delta edges: 9 ; ll: 3.015029
+Total edges: 2616 ; Depth: 17
+Errcode = Stop; KLD = 14470.355291
+Actual delta ll: 4.886929
+Elapsed time: 3.576000 seconds
+Delta time: 0.044000 seconds
+Times: pick=0.8520 split=0.3480 update=1.1680
+Times: edges=0.0240 ll=0.5360 efx=0.4840 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5440
+
+SPLIT 50:
+Recomputed: 24 splits, 32 features; worst-case edges: 49
+Delta edges: 9 ; ll: 2.962981
+Total edges: 2625 ; Depth: 17
+Errcode = Stop; KLD = 14465.887447
+Actual delta ll: 4.467844
+Elapsed time: 3.652000 seconds
+Delta time: 0.076000 seconds
+Times: pick=0.8960 split=0.3560 update=1.1920
+Times: edges=0.0280 ll=0.5720 efx=0.5160 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5480
+
+SPLIT 51:
+Recomputed: 6 splits, 6 features; worst-case edges: 28
+Delta edges: 16 ; ll: 3.307704
+Total edges: 2641 ; Depth: 17
+Errcode = Stop; KLD = 14461.346800
+Actual delta ll: 4.540646
+Elapsed time: 3.700000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.9120 split=0.3640 update=1.2160
+Times: edges=0.0280 ll=0.5840 efx=0.5280 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5520
+
+SPLIT 52:
+Recomputed: 2 splits, 3 features; worst-case edges: 21
+Learning converged with edge penalty of 0.050000.
+Continuing with new edge cost of 0.025000.
+Recomputed: 18 splits, 16 features; worst-case edges: 68
+Delta edges: 57 ; ll: 4.848831
+Total edges: 2698 ; Depth: 19
+Errcode = Stop; KLD = 14455.131415
+Actual delta ll: 6.215385
+Elapsed time: 3.792000 seconds
+Delta time: 0.092000 seconds
+Times: pick=0.9640 split=0.3800 update=1.2400
+Times: edges=0.0280 ll=0.6160 efx=0.5600 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5560
+
+SPLIT 53:
+Recomputed: 13 splits, 14 features; worst-case edges: 91
+Delta edges: 63 ; ll: 4.694716
+Total edges: 2761 ; Depth: 19
+Errcode = Stop; KLD = 14450.161193
+Actual delta ll: 4.970222
+Elapsed time: 3.840000 seconds
+Delta time: 0.048000 seconds
+Times: pick=0.9800 split=0.3880 update=1.2640
+Times: edges=0.0280 ll=0.6320 efx=0.5760 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5600
+
+SPLIT 54:
+Recomputed: 22 splits, 20 features; worst-case edges: 50
+Delta edges: 22 ; ll: 3.523169
+Total edges: 2783 ; Depth: 19
+Errcode = Stop; KLD = 14444.881123
+Actual delta ll: 5.280070
+Elapsed time: 3.896000 seconds
+Delta time: 0.056000 seconds
+Times: pick=1.0040 split=0.3920 update=1.2920
+Times: edges=0.0280 ll=0.6480 efx=0.5920 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3120 score2d=0.5680
+
+SPLIT 55:
+Recomputed: 2 splits, 2 features; worst-case edges: 26
+Delta edges: 26 ; ll: 3.616796
+Total edges: 2809 ; Depth: 19
+Errcode = Stop; KLD = 14440.501158
+Actual delta ll: 4.379964
+Elapsed time: 3.944000 seconds
+Delta time: 0.048000 seconds
+Times: pick=1.0120 split=0.4120 update=1.3120
+Times: edges=0.0280 ll=0.6520 efx=0.5960 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3160 score2d=0.5720
+
+SPLIT 56:
+Recomputed: 31 splits, 27 features; worst-case edges: 72
+Delta edges: 11 ; ll: 3.170018
+Total edges: 2820 ; Depth: 19
+Errcode = Stop; KLD = 14435.242972
+Actual delta ll: 5.258186
+Elapsed time: 4.020000 seconds
+Delta time: 0.076000 seconds
+Times: pick=1.0480 split=0.4240 update=1.3400
+Times: edges=0.0320 ll=0.6840 efx=0.6240 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3160 score2d=0.5760
+
+SPLIT 57:
+Recomputed: 3 splits, 3 features; worst-case edges: 45
+Delta edges: 16 ; ll: 3.284090
+Total edges: 2836 ; Depth: 19
+Errcode = Stop; KLD = 14430.942278
+Actual delta ll: 4.300694
+Elapsed time: 4.052000 seconds
+Delta time: 0.032000 seconds
+Times: pick=1.0520 split=0.4320 update=1.3600
+Times: edges=0.0320 ll=0.6880 efx=0.6280 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3200 score2d=0.5760
+
+SPLIT 58:
+Recomputed: 1 splits, 1 features; worst-case edges: 33
+Delta edges: 33 ; ll: 3.864315
+Total edges: 2869 ; Depth: 19
+Errcode = Stop; KLD = 14425.384331
+Actual delta ll: 5.557947
+Elapsed time: 4.092000 seconds
+Delta time: 0.040000 seconds
+Times: pick=1.0560 split=0.4480 update=1.3800
+Times: edges=0.0320 ll=0.6880 efx=0.6280 1dsearch=0.0080
+Times: emp_p=0.1680 exp_p=0.3200 score2d=0.5800
+
+SPLIT 59:
+Recomputed: 21 splits, 18 features; worst-case edges: 63
+Delta edges: 12 ; ll: 3.016958
+Total edges: 2881 ; Depth: 19
+Errcode = Stop; KLD = 14421.057276
+Actual delta ll: 4.327055
+Elapsed time: 4.260000 seconds
+Delta time: 0.168000 seconds
+Times: pick=1.1800 split=0.4640 update=1.4080
+Times: edges=0.0360 ll=0.8040 efx=0.7440 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3240 score2d=0.5800
+
+SPLIT 60:
+Recomputed: 2 splits, 3 features; worst-case edges: 25
+Delta edges: 25 ; ll: 3.263175
+Total edges: 2906 ; Depth: 19
+Errcode = Stop; KLD = 14416.040562
+Actual delta ll: 5.016714
+Elapsed time: 4.308000 seconds
+Delta time: 0.048000 seconds
+Times: pick=1.1840 split=0.4720 update=1.4440
+Times: edges=0.0360 ll=0.8080 efx=0.7480 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3240 score2d=0.5800
+
+SPLIT 61:
+Recomputed: 2 splits, 2 features; worst-case edges: 24
+Delta edges: 9 ; ll: 2.830682
+Total edges: 2915 ; Depth: 19
+Errcode = Stop; KLD = 14410.775816
+Actual delta ll: 5.264746
+Elapsed time: 4.352000 seconds
+Delta time: 0.044000 seconds
+Times: pick=1.1920 split=0.4840 update=1.4680
+Times: edges=0.0360 ll=0.8120 efx=0.7520 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3240 score2d=0.5840
+
+SPLIT 62:
+Recomputed: 2 splits, 3 features; worst-case edges: 40
+Delta edges: 16 ; ll: 3.224504
+Total edges: 2931 ; Depth: 19
+Errcode = Stop; KLD = 14406.138879
+Actual delta ll: 4.636937
+Elapsed time: 4.392000 seconds
+Delta time: 0.040000 seconds
+Times: pick=1.1960 split=0.4920 update=1.4960
+Times: edges=0.0360 ll=0.8160 efx=0.7560 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3240 score2d=0.5840
+
+SPLIT 63:
+Recomputed: 1 splits, 1 features; worst-case edges: 9
+Delta edges: 9 ; ll: 2.829601
+Total edges: 2940 ; Depth: 19
+Errcode = Stop; KLD = 14402.331447
+Actual delta ll: 3.807432
+Elapsed time: 4.424000 seconds
+Delta time: 0.032000 seconds
+Times: pick=1.2000 split=0.5040 update=1.5120
+Times: edges=0.0360 ll=0.8160 efx=0.7560 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3280 score2d=0.5840
+
+SPLIT 64:
+Recomputed: 2 splits, 3 features; worst-case edges: 10
+Delta edges: 9 ; ll: 2.808039
+Total edges: 2949 ; Depth: 19
+Errcode = Stop; KLD = 14398.281891
+Actual delta ll: 4.049556
+Elapsed time: 4.472000 seconds
+Delta time: 0.048000 seconds
+Times: pick=1.2040 split=0.5120 update=1.5480
+Times: edges=0.0360 ll=0.8200 efx=0.7600 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3280 score2d=0.5880
+
+SPLIT 65:
+Recomputed: 1 splits, 1 features; worst-case edges: 16
+Delta edges: 16 ; ll: 2.999064
+Total edges: 2965 ; Depth: 19
+Errcode = Stop; KLD = 14394.945596
+Actual delta ll: 3.336295
+Elapsed time: 4.504000 seconds
+Delta time: 0.032000 seconds
+Times: pick=1.2080 split=0.5240 update=1.5640
+Times: edges=0.0360 ll=0.8200 efx=0.7600 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3280 score2d=0.5880
+
+SPLIT 66:
+Recomputed: 2 splits, 3 features; worst-case edges: 30
+Delta edges: 30 ; ll: 3.328281
+Total edges: 2995 ; Depth: 19
+Errcode = Stop; KLD = 14391.124249
+Actual delta ll: 3.821347
+Elapsed time: 4.536000 seconds
+Delta time: 0.032000 seconds
+Times: pick=1.2120 split=0.5280 update=1.5880
+Times: edges=0.0360 ll=0.8200 efx=0.7600 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3280 score2d=0.5920
+
+SPLIT 67:
+Recomputed: 12 splits, 20 features; worst-case edges: 91
+Delta edges: 91 ; ll: 4.807097
+Total edges: 3086 ; Depth: 21
+Errcode = Stop; KLD = 14384.188799
+Actual delta ll: 6.935450
+Elapsed time: 4.596000 seconds
+Delta time: 0.060000 seconds
+Times: pick=1.2440 split=0.5360 update=1.6080
+Times: edges=0.0360 ll=0.8480 efx=0.7800 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3280 score2d=0.5960
+
+SPLIT 68:
+Recomputed: 29 splits, 31 features; worst-case edges: 49
+Learning converged with edge penalty of 0.025000.
+Continuing with new edge cost of 0.012500.
+Recomputed: 46 splits, 35 features; worst-case edges: 143
+Delta edges: 69 ; ll: 3.750412
+Total edges: 3155 ; Depth: 21
+Errcode = Stop; KLD = 14379.569781
+Actual delta ll: 4.619018
+Elapsed time: 4.712000 seconds
+Delta time: 0.116000 seconds
+Times: pick=1.3360 split=0.5440 update=1.6240
+Times: edges=0.0480 ll=0.9080 efx=0.8360 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3280 score2d=0.5960
+
+SPLIT 69:
+Recomputed: 27 splits, 27 features; worst-case edges: 54
+Delta edges: 28 ; ll: 3.064549
+Total edges: 3183 ; Depth: 21
+Errcode = Stop; KLD = 14375.666691
+Actual delta ll: 3.903089
+Elapsed time: 4.764000 seconds
+Delta time: 0.052000 seconds
+Times: pick=1.3600 split=0.5560 update=1.6400
+Times: edges=0.0480 ll=0.9320 efx=0.8600 1dsearch=0.0120
+Times: emp_p=0.1680 exp_p=0.3280 score2d=0.5960
+
+SPLIT 70:
+Recomputed: 9 splits, 10 features; worst-case edges: 80
+Delta edges: 40 ; ll: 3.149033
+Total edges: 3223 ; Depth: 21
+Errcode = Stop; KLD = 14371.217736
+Actual delta ll: 4.448956
+Elapsed time: 4.812000 seconds
+Delta time: 0.048000 seconds
+Times: pick=1.3680 split=0.5640 update=1.6720
+Times: edges=0.0480 ll=0.9400 efx=0.8680 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.5960
+
+SPLIT 71:
+Recomputed: 3 splits, 3 features; worst-case edges: 70
+Delta edges: 18 ; ll: 2.863673
+Total edges: 3241 ; Depth: 21
+Errcode = Stop; KLD = 14367.898581
+Actual delta ll: 3.319155
+Elapsed time: 4.840000 seconds
+Delta time: 0.028000 seconds
+Times: pick=1.3760 split=0.5680 update=1.6880
+Times: edges=0.0480 ll=0.9440 efx=0.8720 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.6000
+
+SPLIT 72:
+Recomputed: 10 splits, 10 features; worst-case edges: 96
+Delta edges: 11 ; ll: 2.738935
+Total edges: 3252 ; Depth: 21
+Errcode = Stop; KLD = 14364.116044
+Actual delta ll: 3.782537
+Elapsed time: 4.884000 seconds
+Delta time: 0.044000 seconds
+Times: pick=1.3840 split=0.5720 update=1.7200
+Times: edges=0.0480 ll=0.9520 efx=0.8800 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.6040
+
+SPLIT 73:
+Recomputed: 2 splits, 2 features; worst-case edges: 16
+Delta edges: 16 ; ll: 2.757654
+Total edges: 3268 ; Depth: 21
+Errcode = Stop; KLD = 14361.099277
+Actual delta ll: 3.016766
+Elapsed time: 4.908000 seconds
+Delta time: 0.024000 seconds
+Times: pick=1.3880 split=0.5800 update=1.7320
+Times: edges=0.0480 ll=0.9560 efx=0.8840 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.6040
+
+SPLIT 74:
+Recomputed: 11 splits, 14 features; worst-case edges: 79
+Delta edges: 21 ; ll: 2.783824
+Total edges: 3289 ; Depth: 21
+Errcode = Stop; KLD = 14357.718913
+Actual delta ll: 3.380365
+Elapsed time: 4.948000 seconds
+Delta time: 0.040000 seconds
+Times: pick=1.4040 split=0.5880 update=1.7480
+Times: edges=0.0480 ll=0.9720 efx=0.9000 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.6040
+
+SPLIT 75:
+Recomputed: 9 splits, 15 features; worst-case edges: 87
+Delta edges: 15 ; ll: 2.756099
+Total edges: 3304 ; Depth: 22
+Errcode = Stop; KLD = 14354.457927
+Actual delta ll: 3.260986
+Elapsed time: 4.992000 seconds
+Delta time: 0.044000 seconds
+Times: pick=1.4160 split=0.5960 update=1.7720
+Times: edges=0.0480 ll=0.9800 efx=0.9080 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.6040
+
+SPLIT 76:
+Recomputed: 0 splits, 1 features; worst-case edges: 0
+Learning converged with edge penalty of 0.012500.
+Continuing with new edge cost of 0.006250.
+Recomputed: 19 splits, 16 features; worst-case edges: 204
+Delta edges: 193 ; ll: 4.260616
+Total edges: 3497 ; Depth: 24
+Errcode = Stop; KLD = 14348.458128
+Actual delta ll: 5.999798
+Elapsed time: 5.052000 seconds
+Delta time: 0.060000 seconds
+Times: pick=1.4520 split=0.6040 update=1.7880
+Times: edges=0.0480 ll=0.9960 efx=0.9240 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.6080
+
+SPLIT 77:
+Recomputed: 16 splits, 16 features; worst-case edges: 248
+Delta edges: 46 ; ll: 4.275628
+Total edges: 3543 ; Depth: 24
+Errcode = Stop; KLD = 14343.581710
+Actual delta ll: 4.876418
+Elapsed time: 5.100000 seconds
+Delta time: 0.048000 seconds
+Times: pick=1.4840 split=0.6080 update=1.8000
+Times: edges=0.0480 ll=1.0280 efx=0.9560 1dsearch=0.0120
+Times: emp_p=0.1720 exp_p=0.3280 score2d=0.6120
+
+SPLIT 78:
+Recomputed: 1 splits, 1 features; worst-case edges: 80
+Delta edges: 80 ; ll: 3.460854
+Total edges: 3623 ; Depth: 24
+Errcode = Stop; KLD = 14339.103621
+Actual delta ll: 4.478088
+Elapsed time: 5.128000 seconds
+Delta time: 0.028000 seconds
+Times: pick=1.4880 split=0.6120 update=1.8200
+Times: edges=0.0480 ll=1.0320 efx=0.9600 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3280 score2d=0.6120
+
+SPLIT 79:
+Recomputed: 40 splits, 39 features; worst-case edges: 268
+Delta edges: 53 ; ll: 3.116247
+Total edges: 3676 ; Depth: 24
+Errcode = Stop; KLD = 14334.754591
+Actual delta ll: 4.349031
+Elapsed time: 5.192000 seconds
+Delta time: 0.064000 seconds
+Times: pick=1.5360 split=0.6160 update=1.8320
+Times: edges=0.0520 ll=1.0720 efx=0.9960 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3280 score2d=0.6120
+
+SPLIT 80:
+Recomputed: 21 splits, 20 features; worst-case edges: 294
+Delta edges: 128 ; ll: 3.386727
+Total edges: 3804 ; Depth: 24
+Errcode = Stop; KLD = 14330.677687
+Actual delta ll: 4.076904
+Elapsed time: 5.252000 seconds
+Delta time: 0.060000 seconds
+Times: pick=1.5720 split=0.6240 update=1.8480
+Times: edges=0.0560 ll=1.1040 efx=1.0240 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3280 score2d=0.6120
+
+SPLIT 81:
+Recomputed: 5 splits, 5 features; worst-case edges: 29
+Delta edges: 29 ; ll: 2.752190
+Total edges: 3833 ; Depth: 24
+Errcode = Stop; KLD = 14326.802822
+Actual delta ll: 3.874864
+Elapsed time: 5.296000 seconds
+Delta time: 0.044000 seconds
+Times: pick=1.5800 split=0.6360 update=1.8720
+Times: edges=0.0560 ll=1.1120 efx=1.0320 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3280 score2d=0.6120
+
+SPLIT 82:
+Recomputed: 8 splits, 8 features; worst-case edges: 194
+Delta edges: 82 ; ll: 3.193274
+Total edges: 3915 ; Depth: 24
+Errcode = Stop; KLD = 14322.835708
+Actual delta ll: 3.967114
+Elapsed time: 5.332000 seconds
+Delta time: 0.036000 seconds
+Times: pick=1.5920 split=0.6440 update=1.8880
+Times: edges=0.0560 ll=1.1200 efx=1.0400 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3280 score2d=0.6160
+
+SPLIT 83:
+Recomputed: 24 splits, 27 features; worst-case edges: 173
+Learning converged with edge penalty of 0.006250.
+Continuing with new edge cost of 0.003125.
+Recomputed: 5 splits, 5 features; worst-case edges: 420
+Delta edges: 294 ; ll: 4.305273
+Total edges: 4209 ; Depth: 26
+Errcode = Stop; KLD = 14318.096423
+Actual delta ll: 4.739284
+Elapsed time: 5.408000 seconds
+Delta time: 0.076000 seconds
+Times: pick=1.6520 split=0.6480 update=1.9000
+Times: edges=0.0640 ll=1.1560 efx=1.0760 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3280 score2d=0.6160
+
+SPLIT 84:
+Recomputed: 44 splits, 37 features; worst-case edges: 495
+Delta edges: 11 ; ll: 2.821140
+Total edges: 4220 ; Depth: 27
+Errcode = Stop; KLD = 14314.517507
+Actual delta ll: 3.578916
+Elapsed time: 5.500000 seconds
+Delta time: 0.092000 seconds
+Times: pick=1.7160 split=0.6520 update=1.9240
+Times: edges=0.0720 ll=1.2080 efx=1.1280 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3280 score2d=0.6200
+
+SPLIT 85:
+Recomputed: 13 splits, 14 features; worst-case edges: 152
+Delta edges: 118 ; ll: 3.070828
+Total edges: 4338 ; Depth: 29
+Errcode = Stop; KLD = 14310.087662
+Actual delta ll: 4.429845
+Elapsed time: 5.552000 seconds
+Delta time: 0.052000 seconds
+Times: pick=1.7440 split=0.6600 update=1.9400
+Times: edges=0.0720 ll=1.2320 efx=1.1520 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3320 score2d=0.6200
+
+SPLIT 86:
+Recomputed: 24 splits, 27 features; worst-case edges: 345
+Delta edges: 76 ; ll: 2.795264
+Total edges: 4414 ; Depth: 29
+Errcode = Stop; KLD = 14306.830112
+Actual delta ll: 3.257550
+Elapsed time: 5.628000 seconds
+Delta time: 0.076000 seconds
+Times: pick=1.7920 split=0.6680 update=1.9600
+Times: edges=0.0840 ll=1.2640 efx=1.1800 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3320 score2d=0.6200
+
+SPLIT 87:
+Recomputed: 45 splits, 47 features; worst-case edges: 493
+Delta edges: 33 ; ll: 2.650370
+Total edges: 4447 ; Depth: 29
+Errcode = Stop; KLD = 14303.157691
+Actual delta ll: 3.672421
+Elapsed time: 5.764000 seconds
+Delta time: 0.136000 seconds
+Times: pick=1.9000 split=0.6760 update=1.9800
+Times: edges=0.1000 ll=1.3520 efx=1.2640 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3360 score2d=0.6200
+
+SPLIT 88:
+Recomputed: 3 splits, 3 features; worst-case edges: 90
+Delta edges: 90 ; ll: 2.779549
+Total edges: 4537 ; Depth: 29
+Errcode = Stop; KLD = 14299.520506
+Actual delta ll: 3.637185
+Elapsed time: 5.816000 seconds
+Delta time: 0.052000 seconds
+Times: pick=1.9040 split=0.6840 update=2.0200
+Times: edges=0.1000 ll=1.3520 efx=1.2640 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3440 score2d=0.6200
+
+SPLIT 89:
+Recomputed: 20 splits, 19 features; worst-case edges: 344
+Learning converged with edge penalty of 0.003125.
+Continuing with new edge cost of 0.001563.
+Recomputed: 15 splits, 14 features; worst-case edges: 660
+Delta edges: 660 ; ll: 4.039581
+Total edges: 5197 ; Depth: 31
+Errcode = Stop; KLD = 14292.941721
+Actual delta ll: 6.578785
+Elapsed time: 6.008000 seconds
+Delta time: 0.192000 seconds
+Times: pick=2.0160 split=0.6960 update=2.0880
+Times: edges=0.1040 ll=1.4240 efx=1.3280 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3440 score2d=0.6200
+
+SPLIT 90:
+Recomputed: 36 splits, 34 features; worst-case edges: 688
+Delta edges: 183 ; ll: 2.985835
+Total edges: 5380 ; Depth: 31
+Errcode = Stop; KLD = 14288.346859
+Actual delta ll: 4.594862
+Elapsed time: 6.212000 seconds
+Delta time: 0.204000 seconds
+Times: pick=2.1200 split=0.7080 update=2.1760
+Times: edges=0.1120 ll=1.5120 efx=1.4120 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3440 score2d=0.6240
+
+SPLIT 91:
+Recomputed: 27 splits, 29 features; worst-case edges: 637
+Delta edges: 117 ; ll: 2.751053
+Total edges: 5497 ; Depth: 33
+Errcode = Stop; KLD = 14285.145197
+Actual delta ll: 3.201661
+Elapsed time: 6.348000 seconds
+Delta time: 0.136000 seconds
+Times: pick=2.1880 split=0.7280 update=2.2240
+Times: edges=0.1160 ll=1.5680 efx=1.4680 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3440 score2d=0.6240
+
+SPLIT 92:
+Recomputed: 39 splits, 36 features; worst-case edges: 693
+Learning converged with edge penalty of 0.001563.
+Continuing with new edge cost of 0.000781.
+Recomputed: 37 splits, 30 features; worst-case edges: 1153
+Delta edges: 507 ; ll: 3.138966
+Total edges: 6004 ; Depth: 34
+Errcode = Stop; KLD = 14281.462137
+Actual delta ll: 3.683060
+Elapsed time: 6.604000 seconds
+Delta time: 0.256000 seconds
+Times: pick=2.4040 split=0.7400 update=2.2520
+Times: edges=0.1400 ll=1.7120 efx=1.6040 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3440 score2d=0.6280
+
+SPLIT 93:
+Recomputed: 7 splits, 10 features; worst-case edges: 1221
+Delta edges: 846 ; ll: 3.575013
+Total edges: 6850 ; Depth: 35
+Errcode = Stop; KLD = 14277.536242
+Actual delta ll: 3.925896
+Elapsed time: 6.680000 seconds
+Delta time: 0.076000 seconds
+Times: pick=2.4240 split=0.7520 update=2.2960
+Times: edges=0.1400 ll=1.7280 efx=1.6200 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3440 score2d=0.6320
+
+SPLIT 94:
+Recomputed: 3 splits, 4 features; worst-case edges: 542
+Delta edges: 542 ; ll: 3.132519
+Total edges: 7392 ; Depth: 37
+Errcode = Stop; KLD = 14272.264019
+Actual delta ll: 5.272223
+Elapsed time: 6.772000 seconds
+Delta time: 0.092000 seconds
+Times: pick=2.4480 split=0.7600 update=2.3560
+Times: edges=0.1440 ll=1.7400 efx=1.6320 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3520 score2d=0.6320
+
+SPLIT 95:
+Recomputed: 1 splits, 1 features; worst-case edges: 472
+Delta edges: 472 ; ll: 4.158592
+Total edges: 7864 ; Depth: 39
+Errcode = Stop; KLD = 14266.890959
+Actual delta ll: 5.373060
+Elapsed time: 6.848000 seconds
+Delta time: 0.076000 seconds
+Times: pick=2.4520 split=0.7720 update=2.4160
+Times: edges=0.1440 ll=1.7400 efx=1.6320 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3520 score2d=0.6360
+
+SPLIT 96:
+Recomputed: 20 splits, 29 features; worst-case edges: 829
+Delta edges: 237 ; ll: 2.753198
+Total edges: 8101 ; Depth: 39
+Errcode = Stop; KLD = 14262.624871
+Actual delta ll: 4.266088
+Elapsed time: 7.004000 seconds
+Delta time: 0.156000 seconds
+Times: pick=2.5560 split=0.7800 update=2.4600
+Times: edges=0.1680 ll=1.8120 efx=1.7040 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3520 score2d=0.6400
+
+SPLIT 97:
+Recomputed: 1 splits, 1 features; worst-case edges: 967
+Delta edges: 967 ; ll: 3.867124
+Total edges: 9068 ; Depth: 41
+Errcode = Stop; KLD = 14258.458975
+Actual delta ll: 4.165897
+Elapsed time: 7.064000 seconds
+Delta time: 0.060000 seconds
+Times: pick=2.5680 split=0.8040 update=2.4840
+Times: edges=0.1680 ll=1.8120 efx=1.7040 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3560 score2d=0.6400
+
+SPLIT 98:
+Recomputed: 38 splits, 40 features; worst-case edges: 979
+Learning converged with edge penalty of 0.000781.
+Continuing with new edge cost of 0.000391.
+Recomputed: 28 splits, 27 features; worst-case edges: 1846
+Delta edges: 979 ; ll: 3.038306
+Total edges: 10047 ; Depth: 43
+Errcode = Stop; KLD = 14255.242841
+Actual delta ll: 3.216133
+Elapsed time: 7.296000 seconds
+Delta time: 0.232000 seconds
+Times: pick=2.7520 split=0.8160 update=2.5200
+Times: edges=0.2120 ll=1.9240 efx=1.8080 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3600 score2d=0.6400
+
+SPLIT 99:
+Recomputed: 37 splits, 34 features; worst-case edges: 1911
+Delta edges: 138 ; ll: 2.556986
+Total edges: 10185 ; Depth: 43
+Errcode = Stop; KLD = 14251.190042
+Actual delta ll: 4.052799
+Elapsed time: 7.564000 seconds
+Delta time: 0.268000 seconds
+Times: pick=2.9040 split=0.8400 update=2.6120
+Times: edges=0.2480 ll=2.0240 efx=1.9040 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3680 score2d=0.6400
+
+SPLIT 100:
+Recomputed: 2 splits, 2 features; worst-case edges: 620
+Delta edges: 16 ; ll: 2.506938
+Total edges: 10201 ; Depth: 43
+Errcode = Stop; KLD = 14247.089554
+Actual delta ll: 4.100488
+Elapsed time: 7.660000 seconds
+Delta time: 0.096000 seconds
+Times: pick=2.9160 split=0.8560 update=2.6800
+Times: edges=0.2480 ll=2.0280 efx=1.9080 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3680 score2d=0.6400
+
+SPLIT 101:
+Recomputed: 4 splits, 4 features; worst-case edges: 1338
+Learning converged with edge penalty of 0.000391.
+Continuing with new edge cost of 0.000195.
+Recomputed: 20 splits, 22 features; worst-case edges: 3183
+Delta edges: 2740 ; ll: 3.277423
+Total edges: 12941 ; Depth: 45
+Errcode = Stop; KLD = 14242.550219
+Actual delta ll: 4.539334
+Elapsed time: 7.836000 seconds
+Delta time: 0.176000 seconds
+Times: pick=3.0240 split=0.8640 update=2.7400
+Times: edges=0.2720 ll=2.0800 efx=1.9600 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3680 score2d=0.6400
+
+SPLIT 102:
+Recomputed: 29 splits, 27 features; worst-case edges: 3542
+Delta edges: 1846 ; ll: 2.916240
+Total edges: 14787 ; Depth: 45
+Errcode = Stop; KLD = 14238.838819
+Actual delta ll: 3.711400
+Elapsed time: 8.028000 seconds
+Delta time: 0.192000 seconds
+Times: pick=3.1280 split=0.8840 update=2.8080
+Times: edges=0.3200 ll=2.1280 efx=2.0080 1dsearch=0.0120
+Times: emp_p=0.1760 exp_p=0.3760 score2d=0.6400
+
+SPLIT 103:
+Recomputed: 14 splits, 16 features; worst-case edges: 2477
+Delta edges: 2164 ; ll: 2.950304
+Total edges: 16951 ; Depth: 45
+Errcode = Stop; KLD = 14235.378772
+Actual delta ll: 3.460047
+Elapsed time: 8.264000 seconds
+Delta time: 0.236000 seconds
+Times: pick=3.2320 split=0.9200 update=2.9040
+Times: edges=0.3440 ll=2.1960 efx=2.0680 1dsearch=0.0120
+Times: emp_p=0.1800 exp_p=0.3880 score2d=0.6400
+
+SPLIT 104:
+Recomputed: 22 splits, 24 features; worst-case edges: 3554
+Learning converged with edge penalty of 0.000195.
+Continuing with new edge cost of 0.000098.
+Recomputed: 23 splits, 22 features; worst-case edges: 7106
+Delta edges: 3411 ; ll: 2.985161
+Total edges: 20362 ; Depth: 47
+Errcode = Stop; KLD = 14231.223279
+Actual delta ll: 4.155493
+Elapsed time: 8.924000 seconds
+Delta time: 0.660000 seconds
+Times: pick=3.7080 split=0.9440 update=3.0640
+Times: edges=0.5680 ll=2.3920 efx=2.2600 1dsearch=0.0160
+Times: emp_p=0.1800 exp_p=0.3960 score2d=0.6440
+
+SPLIT 105:
+Recomputed: 28 splits, 28 features; worst-case edges: 7095
+Delta edges: 5809 ; ll: 3.140345
+Total edges: 26171 ; Depth: 49
+Errcode = Stop; KLD = 14227.546888
+Actual delta ll: 3.676392
+Elapsed time: 9.364000 seconds
+Delta time: 0.440000 seconds
+Times: pick=3.9640 split=0.9720 update=3.2200
+Times: edges=0.6680 ll=2.5360 efx=2.4000 1dsearch=0.0160
+Times: emp_p=0.1800 exp_p=0.4040 score2d=0.6440
+
+SPLIT 106:
+Recomputed: 27 splits, 27 features; worst-case edges: 4443
+Learning converged with edge penalty of 0.000098.
+Continuing with new edge cost of 0.000049.
+Recomputed: 26 splits, 23 features; worst-case edges: 8885
+Learning converged with edge penalty of 0.000049.
+Continuing with new edge cost of 0.000024.
+Recomputed: 12 splits, 12 features; worst-case edges: 15875
+Delta edges: 9489 ; ll: 2.925026
+Total edges: 35660 ; Depth: 51
+Errcode = Stop; KLD = 14224.079726
+Actual delta ll: 3.467162
+Elapsed time: 10.380000 seconds
+Delta time: 1.016000 seconds
+Times: pick=4.8120 split=1.0120 update=3.3480
+Times: edges=1.0560 ll=2.9000 efx=2.7480 1dsearch=0.0160
+Times: emp_p=0.1800 exp_p=0.4160 score2d=0.6440
+
+SPLIT 107:
+Recomputed: 17 splits, 15 features; worst-case edges: 18976
+Delta edges: 10231 ; ll: 2.829321
+Total edges: 45891 ; Depth: 53
+Errcode = Stop; KLD = 14220.985546
+Actual delta ll: 3.094180
+Elapsed time: 10.832000 seconds
+Delta time: 0.452000 seconds
+Times: pick=5.0680 split=1.0960 update=3.4600
+Times: edges=1.2040 ll=2.9960 efx=2.8400 1dsearch=0.0160
+Times: emp_p=0.1800 exp_p=0.4280 score2d=0.6440
+
+SPLIT 108:
+Recomputed: 23 splits, 20 features; worst-case edges: 17926
+Delta edges: 5164 ; ll: 2.633480
+Total edges: 51055 ; Depth: 55
+Errcode = Stop; KLD = 14217.935535
+Actual delta ll: 3.050011
+Elapsed time: 11.440000 seconds
+Delta time: 0.608000 seconds
+Times: pick=5.4000 split=1.1440 update=3.6880
+Times: edges=1.3800 ll=3.1320 efx=2.9760 1dsearch=0.0160
+Times: emp_p=0.1800 exp_p=0.4440 score2d=0.6440
+
+SPLIT 109:
+Recomputed: 22 splits, 19 features; worst-case edges: 18471
+Learning converged with edge penalty of 0.000024.
+Continuing with new edge cost of 0.000012.
+Recomputed: 17 splits, 15 features; worst-case edges: 33830
+Delta edges: 29715 ; ll: 2.948969
+Total edges: 80770 ; Depth: 57
+Errcode = Stop; KLD = 14213.413047
+Actual delta ll: 4.522488
+Elapsed time: 13.324000 seconds
+Delta time: 1.884000 seconds
+Times: pick=6.5960 split=1.2920 update=4.2280
+Times: edges=2.0760 ll=3.5160 efx=3.3520 1dsearch=0.0160
+Times: emp_p=0.1800 exp_p=0.4720 score2d=0.6440
+
+SPLIT 110:
+Recomputed: 21 splits, 19 features; worst-case edges: 35484
+Learning converged with edge penalty of 0.000012.
+Continuing with new edge cost of 0.000006.
+Recomputed: 14 splits, 12 features; worst-case edges: 61096
+Delta edges: 48156 ; ll: 2.900761
+Total edges: 128926 ; Depth: 58
+Errcode = Stop; KLD = 14210.269774
+Actual delta ll: 3.143273
+Elapsed time: 15.272000 seconds
+Delta time: 1.948000 seconds
+Times: pick=7.9880 split=1.3920 update=4.6840
+Times: edges=2.8400 ll=4.0480 efx=3.8840 1dsearch=0.0160
+Times: emp_p=0.1800 exp_p=0.5200 score2d=0.6520
+
+SPLIT 111:
+Recomputed: 17 splits, 17 features; worst-case edges: 70850
+Learning converged with edge penalty of 0.000006.
+Continuing with new edge cost of 0.000003.
+Recomputed: 5 splits, 5 features; worst-case edges: 71075
+
+Maximum number of edges reached.
+Total time: 17.552000 seconds
