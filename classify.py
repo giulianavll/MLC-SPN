@@ -1,4 +1,5 @@
 import argparse
+import numpy
 from bin import dataset as dataset_m
 from bin.classifier import *
 import logging
@@ -19,10 +20,8 @@ parser.add_argument('-nl', '--nLabels', type=int, nargs='?',
                     default=1,
                     help='Number of labels in dataset')
 
-parser.add_argument('-nat', '--nAtrb', type=int, nargs='?',
-                    default=1,
-                    help='Number of atributs in dataset')
 parser.add_argument('--folds', action='store_true', default = False )
+parser.add_argument('--bagg', action='store_true', default = False )
 # parsing the args
 args = parser.parse_args()
 
@@ -30,8 +29,8 @@ dataset = args.dataset[0]
 spn_mlearn = args.mlearning
 approach = args.approach
 n_labels = args.nLabels
-n_attributes = args.nAtrb
 folds = args.folds
+bgg = args.bagg
 
 print('-- Init the TRAINING --')
 #load the training set
@@ -47,8 +46,11 @@ else:
 for f in range(0,val):
     if val == 5:
         print(dataset+str(f)+'.train')
-        dataset_f = dataset+str(f)
-        train= dataset_m.csv_2_numpy(dataset+str(f)+'.train')
+        dataset_f=dataset+str(f)
+    train= dataset_m.csv_2_numpy(dataset_f+'.train')
+    y = train.shape[1]
+    n_attributes = y-n_labels
+    test =dataset_m.csv_2_numpy(dataset_f+'.test')
     #choose the approach for MLC
     logging.info('Init Classification Generation')
     if approach == 'br':
@@ -56,34 +58,39 @@ for f in range(0,val):
                          train,
                          dataset_f,
                          n_labels,
-                         n_attributes)
+                         n_attributes,
+                         bgg)
     elif approach == 'cc':
         c= MClassifierCCG(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
-                         n_attributes)
-    elif approach == 'cc1':
-        c= MClassifierCC1(spn_mlearn,
+                         n_attributes,
+                         bgg)
+    elif approach == 'pcc':
+        c= MClassifierPCC(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
-                         n_attributes)
+                         n_attributes,
+                         bgg)
     elif approach == 'mpe':
         c= MClassifierMPE(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
-                         n_attributes)
+                         n_attributes,
+                         bgg)
     elif approach == 'lp':
         c= MClassifierLP(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
-                         n_attributes)
+                         n_attributes,
+                         bgg)
 
     #Train a classifier
     c.create_classifier()
 
     #Classify and get files with the results for Hamming Score, Exact match and  Accuracy 
-    #c.get_metrics()
+    c.classify_metrics(test)

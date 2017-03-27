@@ -31,21 +31,25 @@ class ChooserSPN(object):
           os.makedirs(self.out_path, exist_ok=True)
 
           
-      def learn_model(self,cltree_leaves):
+      def learn_model(self,cltree_leaves,args,comp,bgg):
           #set parameters for learning AC (cltree_leaves=True)and AL(cltree_leaves=false) 
+          print('-------MODELS CONSTRUCTION-----------')
           verbose = 1
           n_row_clusters = 2
           cluster_method = 'GMM'
           seed = 1337
-          g_factors = [1,5,10,15]
           n_iters = 100
           n_restarts = 4
           cluster_penalties = [1.0]
           sklearn_Args = None
-          min_inst_slices = [5,10,50,100]
-          alphas = [0.01,0.1, 0.5 ,1.0 ,2.0]
-
-
+          if not args:
+            g_factors = [5,10,15]  
+            min_inst_slices = [10,50,100] 
+            alphas = [0.1, 0.5 ,1.0,2.0 ]
+          else:
+            g_factors = [args[0]]  
+            min_inst_slices = [args[1]]
+            alphas = [args[2]]
           # setting verbosity level
           if verbose == 1:
               logging.basicConfig(level=logging.INFO)
@@ -90,6 +94,7 @@ class ChooserSPN(object):
           for g_factor in g_factors:
               for cluster_penalty in cluster_penalties:
                   for min_inst_slice in min_inst_slices:
+                      print('model')
                       # Creating the structure learner
                       learner = LearnSPN(g_factor=g_factor,
                                         min_instances_slice=min_inst_slice,
@@ -106,11 +111,14 @@ class ChooserSPN(object):
                       learn_start_t = perf_counter()
                           
                       # build an spn on the training set
-                      #spn = learner.fit_structure(data=train,
-                      #                            feature_sizes=features)
-                      spn = learner.fit_structure_bagging(data=train,
+                      if(bgg):
+                        spn = learner.fit_structure_bagging(data=train,
                                                            feature_sizes=features,
-                                                           n_components=10)
+                                                           n_components=comp)
+                      else:
+                        spn = learner.fit_structure(data=train,
+                                                  feature_sizes=features)
+                      
 
                       learn_end_t = perf_counter()
                       n_edges = spn.n_edges()
@@ -160,7 +168,7 @@ class ChooserSPN(object):
           # logging.info('Grid search ended.')
           # logging.info('Best params:\n\t%s', best_state)
 
-          return best_spn
+          return best_spn, best_state['g_factor'], best_state['min_inst_slice'],best_state['alpha']
 
       def compute_ll(self,
                    spn,

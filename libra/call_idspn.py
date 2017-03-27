@@ -32,7 +32,7 @@ def create_IDnetworks(nfile, v_parameters=[2,5,10,20]):
 	for i in range(0,len(v_parameters)):
 		for j in range(0,len(v_parameters)):
 			for k in range(0,len(v_parameters)):
-				if not nfile == 'yeast0':
+				if nfile=='yeast1' and ((i==1 and j==3 and k>0)or (i>1)):
 					parameters={}
 					parameters['ext']= v_parameters[i]
 					parameters['k']= v_parameters[j]
