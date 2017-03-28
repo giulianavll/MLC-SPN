@@ -59,35 +59,40 @@ for f in range(0,val):
                          dataset_f,
                          n_labels,
                          n_attributes,
-                         bgg)
+                         bgg,
+                         approach)
     elif approach == 'cc':
         c= MClassifierCCG(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
                          n_attributes,
-                         bgg)
+                         bgg,
+                         approach)
     elif approach == 'pcc':
         c= MClassifierPCC(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
                          n_attributes,
-                         bgg)
+                         bgg,
+                         approach)
     elif approach == 'mpe':
         c= MClassifierMPE(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
                          n_attributes,
-                         bgg)
+                         bgg,
+                         approach)
     elif approach == 'lp':
         c= MClassifierLP(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
                          n_attributes,
-                         bgg)
+                         bgg,
+                         approach)
 
     #Train a classifier
     c.create_classifier()

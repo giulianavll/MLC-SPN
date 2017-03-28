@@ -17,13 +17,13 @@ class SPNID(object):
 	def learn(self):
 		logging.info('-- Learn SPN ID --')
 		#check if exists a learned model
-		# path = 'results/models_l/'
-		# files = [i for i in os.listdir(path) if i.startswith(self.name)]
-		# if files:
-		# 	self.name_spn = files[0].partition('.')[0]
-		# else:
-		dataset.numpy_2_file(self.dataset, self.name)
-		self.name_spn = call_idspn.create_IDnetworks(self.name)
+		path = 'results/models_l/'
+		files = [i for i in os.listdir(path) if i.startswith(self.name)]
+		if files:
+			self.name_spn = files[0].partition('.')[0]
+		else:
+			dataset.numpy_2_file(self.dataset, self.name)
+			self.name_spn = call_idspn.create_IDnetworks(self.name)
 		return 
 
 	def query_PC(self, evidence, query):
@@ -80,7 +80,7 @@ class SPNAL(object):
 		lle = self.chooser_spn.compute_ll(self.spn,evidence)
 		llq = self.chooser_spn.compute_ll(self.spn,query)
 		pc =[]
-		for pq , pe in zip(llp,lle):
+		for pq , pe in zip(llq,lle):
 			pc.append(pq - pe)
 		return pc 
 

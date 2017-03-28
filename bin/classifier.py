@@ -18,7 +18,8 @@ class Classifier(object):
 				 name,
 				 nlabels,
 				 nattributes,
-				 bagg):
+				 bagg,
+				 approach):
 		self.learn_algorithm = learn_algorithm
 		self.train = train
 		self.nlabels = nlabels
@@ -27,6 +28,8 @@ class Classifier(object):
 		self.order = []
 		self.models = []
 		self.bagg = bagg
+		self.approach = approach
+
 
 	def generate_SPNID(self,
 					   subset,
@@ -127,7 +130,7 @@ class Classifier(object):
 		str_bag=''
 		if(not self.bagg):
 			str_bag='sb'
-		file = open('results/result_classifier/'+self.name+self.learn_algorithm	+str_bag, 'w')
+		file = open('results/result_classifier/'+self.name+self.learn_algorithm	+self.approach+str_bag, 'w')
 		file.write('Exact Match : ' +str(exact))
 		file.write("\n")
 		file.write('Hamming Score : '+ str(hamming))
@@ -139,7 +142,7 @@ class Classifier(object):
 	def classify_batch(self, test):
 		pass
 
-	def classify_qev(ev, query, nl, a_spn ):
+	def classify_qev(self,ev, query, l, a_spn ):
 		log_prob = a_spn.query_PC(ev,query)
 		for i,lp in enumerate(log_prob):
 			if lp < log(0.5):
@@ -148,9 +151,6 @@ class Classifier(object):
 					query[i][l] = 0
 					#Store priority queue for find the best probability of label with value 0 must be 1 CCG and PCC
 					if self.order:
-						if len(lq_prob) == i:
-							q_pr=queue.PriorityQueue()
-							self.lq_prob.append(q_pr)
 						self.lq_prob[i].put((-lp,i,l))
 				else:
 					query[i][l] = 1
@@ -158,15 +158,15 @@ class Classifier(object):
 
 
 class MClassifierBR(Classifier):
-	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg):
-		 super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg)
+	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg,approach):
+		 super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg,approach)
 
 	def preprocess(self):
 		#BR preprocess Generate l subsets for each label-classifier 
 		logging.info('-- BR Preprocess --')
 		subsets = []
 		dataset = self.train
-		n = dataset.shape[0]
+		n = dataset.shape[0]	
 		for l in range (0,self.nlabels):
 			train_l = numpy.zeros((n,1+self.nattributes),dtype=numpy.int8)
 			strain_l[:,0]=dataset[:,l]
@@ -198,10 +198,10 @@ class MClassifierBR(Classifier):
 
 
 class MClassifierCCG(Classifier):
-	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg):
-		super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg)
-		self.generate_order()
-		self.lq_prob = [] 
+	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg,approach):
+		super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg,approach)
+		
+
 
 	def reorderingDS(self,dataset):
 		perm = numpy.argsort(self.order)
@@ -216,6 +216,7 @@ class MClassifierCCG(Classifier):
 
 	def preprocess(self):
 		logging.info('-- CC Preprocess --')
+		self.generate_order()
 		subsets = []
 		dataset = self.train
 		n=dataset.shape[0]
@@ -245,7 +246,7 @@ class MClassifierCCG(Classifier):
 		return e, q
 
 	def adjust(self,predict):
-		range_v = load_variance()
+		range_v = self.load_variance()
 		for idx,instance in enumerate(predict):
 			ones = numpy.count_nonzero(instance[:self.nlabels])
 			q_pr = self.lq_prob[idx]
@@ -258,6 +259,7 @@ class MClassifierCCG(Classifier):
 
 	def classify_batch(self,test):
 		predict = self.reorderingDS(test)
+		self.lq_prob = [queue.PriorityQueue() for i in range(test.shape[0])]
 		#predict = test
 		for i in range(0,len(self.nlabels)):
 			(ev , query) = self.generate_eq(i,predict)
@@ -267,69 +269,50 @@ class MClassifierCCG(Classifier):
 		return predict	
 
 class MClassifierPCC(MClassifierCCG):
-	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg):
-		 super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg)
+	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg,approach):
+		 super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg,approach)
 
 	def preprocess(self):
 		logging.info('-- PCC Preprocess --')
+		self.generate_order()
+		
 		subsets=[]
 		subsets.append(self.train)
 		return subsets
 
-	def generate_eq(self, nlabel,predict):
+	def generate_eq(self, n,label,predict):
 		n = predict.shape[0]
-		unknown_v = numpy.full((n, self.nlabels - nlabel - 1), -1, dtype='int8')
 		query_v = numpy.full((n, 1), 1, dtype='int8')
-		q= numpy.zeros((self.labels+self.nattributes),dtype=numpy.int8)
-		e= numpy.zeros((n,nlabel+1+self.nattributes),dtype=numpy.int8)
-		
-		q[:,:nlabel] = predict[:,:nlabel]
-		e[:,:nlabel] = predict[:,:nlabel]
-		q[:,nlabel]= query_v[:,0]
-		e[:,nlabel]= unknown_v[:,0]
-		q[:,nlabel+1:] = predict[:,self.nlabels:]
-		e[:,nlabel+1:] = predict[:,self.nlabels:]	
+		q = numpy.zeros_like(predict)
+		e = numpy.zeros_like(predict)
 
-
-
-		##-----------------------*******
-		q =[]
-		e =[]
-		l= self.order[nlabel]
-		n = self.nlabels 
-		unknown_v = []
-		if nlabel == 0:
-			for i in range(n):
-				unknown_v.append(-1)
-		
-		for instance in predict:
-			if(nlabel == 0):
-				instance[: self.nlabels] = unknown_v
-			q_instance = instance
-			e_instance = instance
-			q_instance[l] = 1  #query value P(Li=1)
-			e_instance[l] = -1
-			q.append(q_instance)
-			e.append(e_instance)
-		q = numpy.array(q).astype('int8')
-		e = numpy.array(e).astype('int8')
+		if n==0:
+			unknown_v = numpy.full((n, self.nlabels), -1, dtype='int8')
+			q[:,:self.nlabels] = unknown_v[:,:]
+			e[:,:self.nlabels] = unknown_v[:,:]
+			q[:,self.nlabels:] = predict [:,self.nlabels:]
+			e[:,self.nlabels:] = predict [:,self.nlabels:]
+		else:
+			q[:,:] = predict[:,:]
+			e[:,:] = predict[:,:]
+		q[:,label]= query_v[:,0]
 		return e, q	 
 
 	def classify_batch(self,test):
-		predict=test		
-		for i in range(0,len(self.nlabels)):
-			(ev , query) = self.generate_eq(i,predict)
+		self.lq_prob = [queue.PriorityQueue() for i in range(test.shape[0])]
+		predict=numpy.copy(test)		
+		for i in range(0,self.nlabels):
 			order_i=self.order[i]
+			(ev , query) = self.generate_eq(i,order_i,predict)
 			predict = self.classify_qev(ev , query , order_i, self.models[0])
 		predict = self.adjust(predict)
 		return predict	
 
 
 class MClassifierMPE(Classifier):
-	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg):
-		print('baggg')
-		print(bagg)
-		super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg)
+	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg,approach):
+
+		super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg,approach)
 
 	def preprocess(self):
 		logging.info('-- MPE Preprocess --')
@@ -356,9 +339,9 @@ class MClassifierMPE(Classifier):
 		
 
 class MClassifierLP(Classifier):
-	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg):
-		print(bagg)
-		super().__init__(learn_algorithm, train, name, nlabels, nattributes,bagg)
+	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg,approach):
+
+		super().__init__(learn_algorithm, train, name, nlabels, nattributes,bagg,approach)
 
 	def preprocess(self):
 		logging.info('-- LP Preprocess --')
@@ -385,19 +368,18 @@ class MClassifierLP(Classifier):
 				power_set= power_set + kbits(self.nlabels, i)
 		else:
 			#whole powerset
-			power_set = list(itertools.product([0, 1], repeat = self.nlabels))
+			power_set =[list(i) for i in list(itertools.product([0, 1], repeat = self.nlabels))]
 			power_set = power_set[1:-1]
+		predict = numpy.copy(test)	
+		unknown_v = numpy.full( self.nlabels, -1, dtype='int8')
 		q_v = []
 		e_v = []
-		unknown_v = []
-		for i in range(self.nlabels):
-			unknown_v.append(-1)
-		for instance in test:
+		for instance in predict:
 			q_instance = numpy.copy(instance)
 			e_instance = numpy.copy(instance)
 			for v_labels in power_set:
-				q_instance[:self.nlabels] = v_labels
-				e_instance[:self.nlabels] = unknown_v 
+				q_instance[:self.nlabels] = v_labels[:]
+				e_instance[:self.nlabels] = unknown_v[:] 
 				q_v.append(q_instance)
 				e_v.append(e_instance)
 		q_v = numpy.array(q_v).astype('int8')
