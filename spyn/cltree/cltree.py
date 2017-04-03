@@ -422,33 +422,15 @@ def eval_instance_fact(instance,
                        factors):
     """
     WRITEME
-    change for recognition of character *
     """
     ll = 0.0
     for feature_id in range(tree.shape[0]):
         feature = features[feature_id]
         parent_id = tree[feature_id]
-        if instance[feature] == "*" and  instance[features[parent_id]] == "*" :
-            ll += factors[feature_id,1,1]
-            ll += factors[feature_id,1,0]
-            ll += factors[feature_id,0,1]
-            ll += factors[feature_id,0,0]
-			
-        elif instance[feature] == "*" and  instance[features[parent_id]] != "*" :
-            ll += factors[feature_id,1,instance[features[parent_id]]]
-            ll += factors[feature_id,0,instance[features[parent_id]]]
+        ll += factors[feature_id,
+                      instance[feature],
+                      instance[features[parent_id]]]
 
-        elif instance[feature] != "*" and  instance[features[parent_id]] == "*" :
-            ll += factors[feature_id,
-						  instance[feature],
-						  0]
-            ll += factors[feature_id,
-						  instance[feature],
-						  1]
-        else :
-            ll += factors[feature_id,
-						  instance[feature],
-						  instance[features[parent_id]]]
     return ll
 
 

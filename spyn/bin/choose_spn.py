@@ -36,7 +36,7 @@ class ChooserSPN(object):
           print('-------MODELS CONSTRUCTION-----------')
           verbose = 1
           n_row_clusters = 2
-          cluster_method = 'GMM'
+          cluster_method = 'GMM'  
           seed = 1337
           n_iters = 100
           n_restarts = 4
@@ -136,6 +136,7 @@ class ChooserSPN(object):
                           # Compute LL on training set
                           # logging.info('Evaluating on training set')
                           train_ll = 0.0
+
                           for instance in train:
                               (pred_ll, ) = spn.eval(instance)
                               train_ll += pred_ll

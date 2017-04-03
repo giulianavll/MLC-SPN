@@ -34,13 +34,13 @@ bgg = args.bagg
 
 print('-- Init the TRAINING --')
 #load the training set
-print(folds)
+#print(folds)
 
 if(folds):
     val = 5
 else:
     train = dataset_m.csv_2_numpy(dataset+'.train')
-    val = 0
+    val = 1
     dataset_f=dataset
 
 for f in range(0,val):

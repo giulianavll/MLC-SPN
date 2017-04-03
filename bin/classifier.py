@@ -130,7 +130,7 @@ class Classifier(object):
 		str_bag=''
 		if(not self.bagg):
 			str_bag='sb'
-		file = open('results/result_classifier/'+self.name+self.learn_algorithm	+self.approach+str_bag, 'w')
+		file = open('results/result_classifier/'+self.name+self.learn_algorithm	+self.approach+str_bag+'pruebiss', 'w')
 		file.write('Exact Match : ' +str(exact))
 		file.write("\n")
 		file.write('Hamming Score : '+ str(hamming))
@@ -275,7 +275,6 @@ class MClassifierPCC(MClassifierCCG):
 	def preprocess(self):
 		logging.info('-- PCC Preprocess --')
 		self.generate_order()
-		
 		subsets=[]
 		subsets.append(self.train)
 		return subsets
@@ -285,7 +284,6 @@ class MClassifierPCC(MClassifierCCG):
 		query_v = numpy.full((n, 1), 1, dtype='int8')
 		q = numpy.zeros_like(predict)
 		e = numpy.zeros_like(predict)
-
 		if n==0:
 			unknown_v = numpy.full((n, self.nlabels), -1, dtype='int8')
 			q[:,:self.nlabels] = unknown_v[:,:]
@@ -304,6 +302,7 @@ class MClassifierPCC(MClassifierCCG):
 		for i in range(0,self.nlabels):
 			order_i=self.order[i]
 			(ev , query) = self.generate_eq(i,order_i,predict)
+
 			predict = self.classify_qev(ev , query , order_i, self.models[0])
 		predict = self.adjust(predict)
 		return predict	
@@ -311,7 +310,6 @@ class MClassifierPCC(MClassifierCCG):
 
 class MClassifierMPE(Classifier):
 	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg,approach):
-
 		super().__init__(learn_algorithm, train,name,nlabels,nattributes,bagg,approach)
 
 	def preprocess(self):
@@ -340,7 +338,6 @@ class MClassifierMPE(Classifier):
 
 class MClassifierLP(Classifier):
 	def __init__(self,learn_algorithm, train,name,nlabels,nattributes,bagg,approach):
-
 		super().__init__(learn_algorithm, train, name, nlabels, nattributes,bagg,approach)
 
 	def preprocess(self):

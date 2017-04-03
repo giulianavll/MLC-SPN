@@ -100,18 +100,17 @@ class SPNAC(SPNAL):
 	def learn(self,bagg):
 		logging.info('-- Learn SPN AC --')
 		path = 'results/models_al/'+self.name+'/args'
-		args=self.load_args(path)
-		comp = 1
+		args = self.load_args(path)
 		d_size = self.dataset.shape[0]
+		comp = 1
 		if d_size<600:
 			comp=10
 		elif d_size<2500:
 			comp=4
 		else:
 			comp=2
-		self.chooser_spn = ChooserSPN(self.dataset,'results/models_ac/', self.name)
+		self.chooser_spn = ChooserSPN(self.dataset,'results/models_al/', self.name)
 		(self.spn,g_f,min_i,alpha) = self.chooser_spn.learn_model(True,args,comp,bagg)
 		if not args:
 			self.save_args(path,[g_f,min_i,alpha])
 		return 
-	
