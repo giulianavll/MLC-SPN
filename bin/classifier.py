@@ -130,7 +130,7 @@ class Classifier(object):
 		str_bag=''
 		if(not self.bagg):
 			str_bag='sb'
-		file = open('results/result_classifier/'+self.name+self.learn_algorithm	+self.approach+str_bag+'pruebiss', 'w')
+		file = open('results/result_classifier/'+self.name+self.learn_algorithm	+self.approach+str_bag, 'w')
 		file.write('Exact Match : ' +str(exact))
 		file.write("\n")
 		file.write('Hamming Score : '+ str(hamming))
@@ -279,12 +279,12 @@ class MClassifierPCC(MClassifierCCG):
 		subsets.append(self.train)
 		return subsets
 
-	def generate_eq(self, n,label,predict):
+	def generate_eq(self, nl,label,predict):
 		n = predict.shape[0]
 		query_v = numpy.full((n, 1), 1, dtype='int8')
 		q = numpy.zeros_like(predict)
 		e = numpy.zeros_like(predict)
-		if n==0:
+		if nl==0:
 			unknown_v = numpy.full((n, self.nlabels), -1, dtype='int8')
 			q[:,:self.nlabels] = unknown_v[:,:]
 			e[:,:self.nlabels] = unknown_v[:,:]
@@ -302,9 +302,8 @@ class MClassifierPCC(MClassifierCCG):
 		for i in range(0,self.nlabels):
 			order_i=self.order[i]
 			(ev , query) = self.generate_eq(i,order_i,predict)
-
 			predict = self.classify_qev(ev , query , order_i, self.models[0])
-		predict = self.adjust(predict)
+		#predict = self.adjust(predict)
 		return predict	
 
 
