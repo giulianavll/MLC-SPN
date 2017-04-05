@@ -4,7 +4,7 @@ import re
 import shutil
 
 INPUT_PATH = 'data/'
-INPUTQ_PATH = 'data/queries'
+INPUTQ_PATH = 'data/queries/'
 OUTPUT_PATH = 'results/models_l/'
 
 def learn_Libra(n_file,new_nfile, parameters):
@@ -52,22 +52,21 @@ def create_IDnetworks(nfile, v_parameters=[2,5,10,20]):
 	logging.info('---Found the best network---')				
 	return best_spn
 
-	def inference_mg(eqname, spn):
-		#libra spquery -m msweb-mt.spn -q msqweb.q -ev msweb.ev
-		args=['libra','spquery','-m', OUTPUT_PATH+eqname+'.spn','-q',INPUTQ_PATH+query+'.q','-ev',INPUTQ_PATH+eqname+'.ev']
-		p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-		out, err = p.communicate()
-		if out:
-			sout = out.decode('ascii')
-			lout = sout.split('\n')
-			lp=[]
-			for o in lout:
-				if o.find(avg)==-1 and not o=='':
-					lp.append(float(o))
-			print(lp)
-		if err:
-			print("error of libra: "+ n_file + " ")
-			print(err) 
-		return lp
+def inference_mg(eqname, spn):
+	#libra spquery -m msweb-mt.spn -q msqweb.q -ev msweb.ev
+	args=['libra','spquery','-m', OUTPUT_PATH+spn+'.spn','-q',INPUTQ_PATH+eqname+'.q','-ev',INPUTQ_PATH+eqname+'.ev']
+	p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	out, err = p.communicate()
+	lp=[]
+	if out:
+		sout = out.decode('ascii')
+		lout = sout.split('\n')
+		for o in lout:
+			if o.find('avg')==-1 and not o=='':
+				lp.append(float(o))
+	if err:
+		print("error of libra: "+ eqname + " ")
+		print(err)
+	return lp
 
 

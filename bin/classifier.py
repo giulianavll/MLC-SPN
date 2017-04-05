@@ -147,18 +147,21 @@ class Classifier(object):
 		for i,lp in enumerate(log_prob):
 			val = query[i][l]
 			if lp < log(0.5):
-				if val == 1:
-					query[i][l] = 0
-					#Store priority queue for find the best probability of label with value 0 must be 1 CCG and PCC
-					if self.order:
-						self.lq_prob[i].put((-lp,i,l))
-				else:
+				if val == 0:
 					query[i][l] = 1
+					#Store priority queue for find the best probability of label with value 0 must be 1 CCG and PCC
+				elif val==1:
+					query[i][l] = 0
+					if self.order:
+						self.lq_prob[i].put((lp,i,l))
+				else:
+					print('ohh')
+					print(val)
 			else:
-				if val ==0:
+				if val == 0:
 					#Store priority queue for find the best probability of label with value 0 must be 1 CCG and PCC
 					if self.order:
-						self.lq_prob[i].put((-lp,i,l))
+						self.lq_prob[i].put((lp,i,l))
 
 
 		return query
@@ -334,7 +337,6 @@ class MClassifierMPE(Classifier):
 			unknow_labels = numpy.zeros(self.nlabels)
 			unknow_labels.fill(-2)
 			q_instance[ :self.nlabels] = unknow_labels[ : ]
-		print(query)
 		aspn = self.models[0]
 		mpe_values = aspn.mpe(query,self.nlabels)
 		for instance, v_mpe in zip(query,mpe_values):
@@ -393,7 +395,7 @@ class MClassifierLP(Classifier):
 
 	
 
-	def classify_qev(ev, query, a_spn ):
+	def classify_qev(self,ev, query, a_spn ):
 		log_proba = a_spn.query_PC(ev,query)
 		return log_proba
 	
@@ -412,7 +414,7 @@ class MClassifierLP(Classifier):
 				max_prob = a_prob
 				val_max = q[idx]
 			if ((idx+1) % s_lp) == 0:
-				predict.append(valmax)
+				predict.append(val_max)
 				max_prob = -999
-				valmax=[]			
+				val_max=[]			
 		return predict 		

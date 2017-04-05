@@ -2,7 +2,7 @@ import numpy
 import csv
 
 INPUT_PATH = "data/"
-OUTPUT_PATH = "data/queries"
+OUTPUT_PATH = "data/queries/"
 
 def csv_2_numpy(file, path=INPUT_PATH, sep=',', type='int8'):
     """
@@ -20,7 +20,9 @@ def numpy_2_file(narray, file, path=OUTPUT_PATH, sep=',' ):
     convert numpy into csv file , for ID(libra) algothim
     """
     file_path = path + file
-    dataset = numpy.copy(narray).astype(str)
-    numpy.place(dataset,numpy.logical_or(dataset=='-1',dataset=='-2'), '*')
+    narrayc = numpy.copy(narray)
+    numpy.place(narrayc,numpy.logical_or(narrayc==-1,narrayc==-2), 2)
+    dataset = numpy.copy(narrayc).astype(str)
+    numpy.place(dataset,dataset=='2', '*')
     numpy.savetxt(file_path, dataset, delimiter=sep, fmt='%s')
     return 

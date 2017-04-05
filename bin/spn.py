@@ -21,6 +21,7 @@ class SPNID(object):
 		files = [i for i in os.listdir(path) if i.startswith(self.name)]
 		if files:
 			self.name_spn = files[0].partition('.')[0]
+			print('find'+self.name_spn)
 		else:
 			dataset.numpy_2_file(self.dataset, self.name)
 			self.name_spn = call_idspn.create_IDnetworks(self.name)
@@ -30,6 +31,7 @@ class SPNID(object):
 		dataset.numpy_2_file(evidence, self.name+'.ev')
 		dataset.numpy_2_file(query, self.name+'.q')
 		probs = call_idspn.inference_mg(self.name, self.name_spn)
+		return probs
 
 	def mpe(self, query, n):
 		v_mpe =[]
