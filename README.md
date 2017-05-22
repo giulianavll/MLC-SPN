@@ -2,7 +2,7 @@
 Multi-Label Classification based on Sum-Product Networks
 
 ## overview
-
+	
 Use the implementations:
 
 [LearnSPN](http://homes.cs.washington.edu/~pedrod/papers/mlc13.pdf) and SPN-AL, SPN-AC as presented in:  
@@ -23,19 +23,19 @@ MLC-SPN is build upon python3 [numpy](http://www.numpy.org/),
 
 ## usage
 
-To run the algorithm execute :
-python3 classify.py -dataset flags -nl 7 -ml ac  -ap psc -psm all --folds
+To run the algorithm execute :  
+python3 classify.py -dataset flags -nl 7 -ml ac  -ap psc -psm all --folds  
 
 python3 classify.py -dataset flags0 -nl 7 -ml ac  -ap sc -io s  
 
 Parameters:
 [-dataset] Dataset name (Only use datasets whose contents are binary values).
-[-nl] Labels number in the dataset.
-[-ml] SPN learning methods (al,ac,id).
-[-ap] Multi-Label classification approach (br,cc,mpe,lp, psc, sc).
-[-psm] Only for Pool Sequential Classification approach (psc), defines the method for obtaing a single classification (all, av,vt,max). 
-[-io] Only for Sequential Classification apporach(sc), defines the method for obtain the order (r,s,d).
-[--folds] Find and process the 5-folds for training and classification (dataset+nfold).
+[-nl] Labels number in the dataset.  
+[-ml] SPN learning methods (al,ac,id).  
+[-ap] Multi-Label classification approach (br,cc,mpe,lp, psc, sc).  
+[-psm] Only for Pool Sequential Classification approach (psc), defines the method for obtaing a single classification (all, av,vt,max).  
+[-io] Only for Sequential Classification apporach(sc), defines the method for obtain the order (r,s,d).  
+[--folds] Find and process the 5-folds for training and classification (dataset+nfold).  
 [--bagg] Use bagging, only for the methods al and ac.
 
 Several datasets are provided in the `data/` folder.
