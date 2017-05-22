@@ -567,7 +567,7 @@ class MClassifierPSC(MClassifierSCIO):
 		 self.predict_v = []
 
 	def generate_order(self):
-		for i in range(5):
+		for i in range(20):
 			self.order.append(numpy.random.permutation(self.nlabels) )
 
 

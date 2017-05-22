@@ -10,8 +10,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-dataset', '--dataset', type=str, nargs=1,
                     help='Specify a dataset name from data/ (es. flags0)')
 parser.add_argument('-ap','--approach' ,type=str, nargs='?',
-                    default='cc1',
-                    help='Multilabel Classification Approach br, cc, cc1, mpe, lp ')
+                    default='lp',
+                    help='Multilabel Classification Approach br, cc, mpe, lp, sc, psc ')
 parser.add_argument('-ml', '--mlearning',type=str, nargs='?',
                     default='al',
                     help='Method for learning SPN id, al, ac')
