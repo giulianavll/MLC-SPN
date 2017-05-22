@@ -28,8 +28,8 @@ python3 classify.py -dataset flags -nl 7 -ml ac  -ap psc -psm all --folds
 
 python3 classify.py -dataset flags0 -nl 7 -ml ac  -ap sc -io s  
 
-Parameters:
-[-dataset] Dataset name (Only use datasets whose contents are binary values).
+Parameters:  
+[-dataset] Dataset name (Only use datasets whose contents are binary values).  
 [-nl] Labels number in the dataset.  
 [-ml] SPN learning methods (al,ac,id).  
 [-ap] Multi-Label classification approach (br,cc,mpe,lp, psc, sc).  
