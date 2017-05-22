@@ -21,10 +21,12 @@ class SPNID(object):
 		files = [i for i in os.listdir(path) if i.startswith(self.name)]
 		if files:
 			self.name_spn = files[0].partition('.')[0]
-			print('find'+self.name_spn)
+			print('find SPN: '+self.name_spn)
 		else:
 			dataset.numpy_2_file(self.dataset, self.name)
 			self.name_spn = call_idspn.create_IDnetworks(self.name)
+		# dataset.numpy_2_file(self.dataset, self.name)
+		# self.name_spn = call_idspn.create_IDnetworks(self.name)	
 		return 
 
 	def query_PC(self, evidence, query):

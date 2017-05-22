@@ -24,5 +24,6 @@ def numpy_2_file(narray, file, path=OUTPUT_PATH, sep=',' ):
     numpy.place(narrayc,numpy.logical_or(narrayc==-1,narrayc==-2), 2)
     dataset = numpy.copy(narrayc).astype(str)
     numpy.place(dataset,dataset=='2', '*')
-    numpy.savetxt(file_path, dataset, delimiter=sep, fmt='%s')
+    d=numpy.atleast_2d(dataset)
+    numpy.savetxt(file_path, d, delimiter=sep, fmt='%s')
     return 

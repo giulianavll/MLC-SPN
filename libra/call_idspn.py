@@ -27,12 +27,12 @@ def create_IDnetworks(nfile, v_parameters=[2,5,10,20]):
 	#Comparations of parameters
 	likelihood = -99999
 	best_spn = ''
-	logging.info('-- Train SPN with diferent parameters --')
-	logging.info('This process may take a few minutes.......')
+	print('-- Train SPN with diferent parameters --')
+	print('This process may take a few minutes.......')
 	for i in range(0,len(v_parameters)):
 		for j in range(0,len(v_parameters)):
 			for k in range(0,len(v_parameters)):
-				if nfile=='yeast1' and ((i==1 and j==3 and k>0)or (i>1)):
+				if (i==0 and j==3 and k>=0 )or(i==0 and j>3)or (i>0):
 					parameters={}
 					parameters['ext']= v_parameters[i]
 					parameters['k']= v_parameters[j]
