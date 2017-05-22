@@ -22,15 +22,26 @@ parser.add_argument('-nl', '--nLabels', type=int, nargs='?',
 
 parser.add_argument('--folds', action='store_true', default = False )
 parser.add_argument('--bagg', action='store_true', default = False )
+
+parser.add_argument('-io', '--io', type=str, nargs='?',
+                    default='',
+                    help='Informed Order Sequential classifications')
+
+parser.add_argument('-psm', '--psm', type=str, nargs='?',
+                    default='',
+                    help='Pool of sequential classifications Method')
+
 # parsing the args
 args = parser.parse_args()
-
 dataset = args.dataset[0] 
 spn_mlearn = args.mlearning
 approach = args.approach
 n_labels = args.nLabels
 folds = args.folds
 bgg = args.bagg
+io = args.io
+psm = args.psm
+
 
 print('-- Init the TRAINING --')
 #load the training set
@@ -69,14 +80,33 @@ for f in range(0,val):
                          n_attributes,
                          bgg,
                          approach)
-    elif approach == 'pcc':
-        c= MClassifierPCC(spn_mlearn,
+    elif approach == 'sc' and io=='r':
+        c= MClassifierSC(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
                          n_attributes,
                          bgg,
-                         approach)
+                         approach,
+                         io)
+    elif approach == 'sc' and not (io =='r'):
+        c= MClassifierSCIO(spn_mlearn,
+                         train,
+                         dataset_f,
+                         n_labels,
+                         n_attributes,
+                         bgg,
+                         approach,
+                         io)
+    elif approach == 'psc':
+        c= MClassifierPSC(spn_mlearn,
+                         train,
+                         dataset_f,
+                         n_labels,
+                         n_attributes,
+                         bgg,
+                         approach,
+                         psm)
     elif approach == 'mpe':
         c= MClassifierMPE(spn_mlearn,
                          train,
