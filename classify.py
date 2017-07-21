@@ -11,7 +11,7 @@ parser.add_argument('-dataset', '--dataset', type=str, nargs=1,
                     help='Specify a dataset name from data/ (es. flags0)')
 parser.add_argument('-ap','--approach' ,type=str, nargs='?',
                     default='lp',
-                    help='Multilabel Classification Approach br, cc, mpe, lp, sc, psc ')
+                    help='Multilabel Classification Approach br, cc, sc,psc, mpe, lp ')
 parser.add_argument('-ml', '--mlearning',type=str, nargs='?',
                     default='al',
                     help='Method for learning SPN id, al, ac')
@@ -98,15 +98,15 @@ for f in range(0,val):
                          bgg,
                          approach,
                          io)
-    elif approach == 'psc':
-        c= MClassifierPSC(spn_mlearn,
+    elif approach == 'psc' or approach == 'plc':
+        c= MClassifierPC(spn_mlearn,
                          train,
                          dataset_f,
                          n_labels,
                          n_attributes,
                          bgg,
                          approach,
-                         psm)
+                         psm    )
     elif approach == 'mpe':
         c= MClassifierMPE(spn_mlearn,
                          train,
@@ -115,7 +115,7 @@ for f in range(0,val):
                          n_attributes,
                          bgg,
                          approach)
-    elif approach == 'lp':
+    elif approach == 'lp2':
         c= MClassifierLP(spn_mlearn,
                          train,
                          dataset_f,
@@ -123,6 +123,14 @@ for f in range(0,val):
                          n_attributes,
                          bgg,
                          approach)
+    elif approach == 'lpd' or approach=='lp':
+        c= MClassifierLPD(spn_mlearn,
+                         train,
+                         dataset_f,
+                         n_labels,
+                         n_attributes,
+                         bgg,
+                         approach)    
 
     #Train a classifier
     c.create_classifier()

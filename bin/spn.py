@@ -32,13 +32,20 @@ class SPNID(object):
 	def query_PC(self, evidence, query):
 		dataset.numpy_2_file(evidence, self.name+'.ev')
 		dataset.numpy_2_file(query, self.name+'.q')
-		probs = call_idspn.inference_mg(self.name, self.name_spn)
+		probs = call_idspn.inference_cond(self.name, self.name_spn)
+		return probs
+
+	def query(self, query):
+		dataset.numpy_2_file(query, self.name+'.q')
+		probs = call_idspn.inference_ev(self.name, self.name_spn)
 		return probs
 
 	def mpe(self, query, n):
-		v_mpe =[]
-		return v_mpe
+		dataset.numpy_2_file(query, self.name+'.q')
+		vmpe = call_idspn.mpe(self.name, self.name_spn)
+		return vmpe
 
+	
 class SPNAL(object):
 
 	def __init__(self,
@@ -48,7 +55,7 @@ class SPNAL(object):
 		self.name = name
 
 	def load_args(self, path):
-		args = []
+		args = []	
 		if os.path.isfile(path):
 			file = open(path, 'r')
 			args = file.readline().split(',')
@@ -87,6 +94,10 @@ class SPNAL(object):
 		for pq , pe in zip(llq,lle):
 			pc.append(pq - pe)
 		return pc 
+
+	def query(self, query):
+		llq = self.chooser_spn.compute_ll(self.spn,query)
+		return llq
 
 
 	def mpe(self, query, n):
