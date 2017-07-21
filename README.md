@@ -32,9 +32,9 @@ Parameters:
 [-dataset] Dataset name (Only use datasets whose contents are binary values).  
 [-nl] Labels number in the dataset.  
 [-ml] SPN learning methods (al,ac,id).  
-[-ap] Multi-Label classification approach (br,cc,mpe,lp, psc, sc).  
-[-psm] Only for Pool Sequential Classification approach (psc), defines the method for obtaing a single classification (all, av,vt,max).  
-[-io] Only for Sequential Classification apporach(sc), defines the method for obtain the order (r,s,d).  
+[-ap] Multi-Label classification approach (br,cc,mpe,ec, sc, psc,pec).  
+[-psm] Only for Pool Classification approach (psc, pec), defines the method for obtaing a single classification (all, av,vt,max).  
+[-io] Only for Sequential Classification apporach (sc), defines the method for obtain the order (r,s,d).  
 [--folds] Find and process the 5-folds for training and classification (dataset+nfold).  
 [--bagg] Use bagging, only for the methods al and ac.
 

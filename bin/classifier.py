@@ -648,15 +648,15 @@ class MClassifierLPD(Classifier):
 		
 	def classify_batch(self,test):
 		predict = numpy.copy(test)
-		if self.approach =='lpd':
+		if self.approach =='ec':
 			label_set = self.load_vlabel()
-		elif self.approach =='lp':
+		elif self.approach =='e2':
 			label_set = self.load_vlabelp()
 		for x,example in enumerate(test):
 			label_q = self.concate_LE(example,label_set)
-			if self.approach =='lpd':
+			if self.approach =='ec':
 				predict[x]= self.get_predictionlpd(label_q)
-			elif self.approach =='lp':
+			elif self.approach =='e2':
 				predict[x]= self.get_predictionlp(label_q)
 			
 		return predict
@@ -684,7 +684,7 @@ class MClassifierPC(MClassifierSCIO,MClassifierLPD):
 		if self.approach == 'psc':
 			self.generate_order()
 
-		elif self.approach == 'plc':
+		elif self.approach == 'pec':
 			self.label_set = self.load_vlabel()
 		subsets=[]
 		subsets.append(self.train)
@@ -753,7 +753,7 @@ class MClassifierPC(MClassifierSCIO,MClassifierLPD):
 				else :
 					weights_avg_a[lx] = weights_avg[lx] + p			
 		self.weights_avg = weights_avg/self.npool	
-		if(self.approach =='plc'):
+		if(self.approach =='pec'):
 			self.weights_avg_a = weights_avg_a/self.npool
 		self.weights_vot = weights_vot/self.npool
 		self.predict_v = predict_v
@@ -765,7 +765,7 @@ class MClassifierPC(MClassifierSCIO,MClassifierLPD):
 		if len(self.weights_avg)==0:
 			if self.approach == 'psc':
 				self.get_Weights_sq(example)
-			elif self.approach == 'plc':
+			elif self.approach == 'pec':
 				self.get_Weights_lp(example)
 		if self.approach == 'psc':		
 			for i,w in enumerate(self.weights_avg):
@@ -774,7 +774,7 @@ class MClassifierPC(MClassifierSCIO,MClassifierLPD):
 				else:
 					predict_e[i]= 0
 					self.putQueue(0,(-w,0,i))
-		elif self.approach == 'plc':
+		elif self.approach == 'pec':
 			# print(self.weights_avg_a)
 			# print(self.weights_avg)
 			for i,wp in enumerate(self.weights_avg):
@@ -796,7 +796,7 @@ class MClassifierPC(MClassifierSCIO,MClassifierLPD):
 		if len(self.weights_vot)==0:
 			if self.approach == 'psc':
 				self.get_Weights_sq(example)	
-			elif self.approach == 'plc':
+			elif self.approach == 'pec':
 				self.get_Weights_lp(example)
 		for i,w in enumerate(self.weights_vot):
 			if w >= 0.5:
@@ -813,7 +813,7 @@ class MClassifierPC(MClassifierSCIO,MClassifierLPD):
 		if len(self.predict_v)==0:
 			if self.approach == 'psc':
 				self.get_Weights_sq(example)
-			elif self.approach == 'plc':
+			elif self.approach == 'pec':
 				self.get_Weights_lp(example)
 		log_max = -99999
 		probs={}

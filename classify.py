@@ -98,7 +98,7 @@ for f in range(0,val):
                          bgg,
                          approach,
                          io)
-    elif approach == 'psc' or approach == 'plc':
+    elif approach == 'psc' or approach == 'pec':
         c= MClassifierPC(spn_mlearn,
                          train,
                          dataset_f,
@@ -115,7 +115,7 @@ for f in range(0,val):
                          n_attributes,
                          bgg,
                          approach)
-    elif approach == 'lp2':
+    elif approach == 'ec2':
         c= MClassifierLP(spn_mlearn,
                          train,
                          dataset_f,
@@ -123,7 +123,7 @@ for f in range(0,val):
                          n_attributes,
                          bgg,
                          approach)
-    elif approach == 'lpd' or approach=='lp':
+    elif approach == 'ec' or approach=='ec':
         c= MClassifierLPD(spn_mlearn,
                          train,
                          dataset_f,

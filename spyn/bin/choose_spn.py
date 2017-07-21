@@ -177,13 +177,17 @@ class ChooserSPN(object):
                    name=None):
 
           # Compute LL on test set
-          test_lls = numpy.zeros(test.shape[0])
+          
           # logging.info('Evaluating on test set')
-         
-          for i, instance in enumerate(test):
-            (pred_ll,) = spn.eval(instance)
-            test_lls[i] = pred_ll
-
+          if len(test.shape) ==1:
+            test_lls = numpy.zeros(1)
+            (pred_ll,) = spn.eval(test)
+            test_lls[0] = pred_ll
+          else:
+            test_lls = numpy.zeros(test.shape[0])
+            for i, instance in enumerate(test):    
+              (pred_ll,) = spn.eval(instance)
+              test_lls[i] = pred_ll
           if name is not None:
             test_lls_path = self.out_path + '/'+name+'test.lls'
             numpy.savetxt(test_lls_path, test_lls, delimiter='\n')
