@@ -19,7 +19,7 @@ Use the implementations:
 ## requirements
 MLC-SPN is build upon python3 [numpy](http://www.numpy.org/),
 [sklearn](http://scikit-learn.org/stable/),
-[scipy](http://www.scipy.org/), [numba](http://numba.pydata.org/), [matplotlib](http://matplotlib.org/) and [theano](http://deeplearning.net/software/theano/), and the [LibraTollkit](http://libra.cs.uoregon.edu/doc/manual.pdf)
+[scipy](http://www.scipy.org/), [numba](http://numba.pydata.org/), [matplotlib](http://matplotlib.org/) and [theano](http://deeplearning.net/software/theano/), and the [LibraToolkit](http://libra.cs.uoregon.edu/doc/manual.pdf), after the installation of the LibraToolkit also  need to repleace the files in /.opam/system/bin/ by all files at MLC-SPN/libra/bin of the repository, for obtain the MPE approximate inference with ID. 
 
 ## usage
 
